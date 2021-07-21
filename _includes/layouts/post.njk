@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>{{title}}</title>
+    {% include "head.liquid" %}
+  </head>
+  <body>
+    {% include "nav.njk" %}
+
+    <main>
+      <article class="post">
+        <h1>{{ title }}</h1>
+        <p>
+          <small>
+            <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
+          </small>
+        </p>
+
+        {{ content | safe }}
+
+
+
+      </article>
+      <section class="tags">
+        <h3>Tags</h3>
+        {% if tags %}
+          <ul>
+          {% for tag in tags %}
+            {%- if tag != "post" -%}
+              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+              <li><a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a></li>
+            {%- endif -%}
+          {% endfor %}
+          </ul>
+        {% endif %}
+      </section>
+    </main>
+
+    {% include "footer.liquid" %}
+  </body>
+</html>

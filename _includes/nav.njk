@@ -1,0 +1,16 @@
+<header>
+    <nav>
+        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+            listElement: "ul",
+            listItemElement: "li",
+            listClass: "",
+            listItemClass: "",
+            listItemHasChildrenClass: "dropdown",
+            listItemHasParentClass: "dropdown-content",
+            activeListItemClass: "",
+            activeAnchorClass: "active",
+            activeKey: eleventyNavigation.key,
+            showExcerpt: false
+        }) | safe }}
+    </nav>
+</header>
