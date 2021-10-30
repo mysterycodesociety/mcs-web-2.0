@@ -8,7 +8,7 @@ This is the design guide for MCS's new website - to be launched.
 - [Liquid](https://shopify.github.io/liquid/) - templating language
 - [Node](https://nodejs.org/en/) - JavaScript runtime
 - [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) - node package manager
-- [GitHub](https://github.com/mysterycodesociety/mcs-web) - host of the git repository
+- [GitHub](https://github.com/mysterycodesociety/mcs-web-2.0) - host of the git repository
 - [Netlify](https://www.netlify.com) - build, deploy, and host the website
 
 # Local Development
@@ -64,9 +64,9 @@ Below, you will find more specific instructions for your operating system.
 ### GitHub Repository Firsts
 
 1. [Git Clone](https://github.com/git-guides/git-clone) this repository onto your machine (see link for instructions).
-1. Change your directory to the cloned repository: `cd mcs-web` in terminal.
-1. Install dependencies: `npm install` in terminal.
-1. Build the site for the first time (generating a `_site` directory) by running `npx @11ty/eleventy` in terminal.
+1. Change your directory to the cloned repository: `cd mcs-web-2.0` in terminal.
+1. Install dependencies: `npm install` in terminal.  It may take a while to run this command. Be patient.
+1. Run `npx @11ty/eleventy` in terminal.  That command will build your site in the `_site` directory.
 
 
 ## Running the server
@@ -112,5 +112,5 @@ This workflow assumes you have already done all the 'Getting Started' pieces and
     ```sh
     git push origin my-new-branch-name
     ```
-1. Go to the [repository on GitHub](https://github.com/mysterycodesociety/mcs-web/).  You should see the branch you just pushed.  Click the 'Compare & pull request' button to make a new Pull Request.
+1. Go to the [repository on GitHub](https://github.com/mysterycodesociety/mcs-web-2.0/).  You should see the branch you just pushed.  Click the 'Compare & pull request' button to make a new Pull Request.
 1. On the Open a Pull Request page, type information a reviewer might need to review your work in the main body.  On the right hand menu, use the Settings icon in the Reviewers section to tag reviewers.  On the right hand menu, in the Label section add 'Code Review' as a label.  Click to Create Pull Request'.
