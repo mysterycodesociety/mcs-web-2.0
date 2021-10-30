@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* =================================================================
     Created: 4/5/2021
    ================================================================= */
@@ -36,7 +37,44 @@
 @import "7-utilities/u-color";
 @import "7-utilities/u-spacing";
 @import "7-utilities/u-typography";
+=======
+/*colors*/
+$main-green: #009688;
+$main-green-dark: #004B44;
+$main-green-light: #80CBC4;
+$secondary-green: #9BD4CE;
+$secondary-green-dark: #4E6A67;
+$secondary-green-light: #CDEAE7;
+
+$main-purple: #7B1FA2;
+$main-purple-dark: #3E1051;
+$main-purple-light: #BD8FD1;
+$secondary-purple: #C9A4D8;
+$secondary-purple-dark: #65526C;
+$secondary-purple-light: #E4D2EC;
+
+$main-blue: #0288D1;
+$main-blue-dark: #014469;
+$main-blue-light: #81C4E8;
+$secondary-blue: #9BCEED;
+$secondary-blue-dark: #4E6777;
+$secondary-blue-light: #CDE7F6;
+
+$main-pink: #E91E63;
+$main-pink-dark: #750F32;
+$main-pink-light: #F48FB1;
+$secondary-pink: #F5A5C0;
+$secondary-pink-dark: #7B5360;
+$secondary-pink-light: #FAD2E0;
+
+$main-yellow: #FFC107;
+$main-yellow-dark: #806104;
+$main-yellow-light: #FFE083;
+$secondary-yellow: #FFE79D;
+$secondary-yellow-dark: #80744F;
+$secondary-yellow-light: #FFF3CE;
+>>>>>>> 75adf5b (change color list to sass)
 
 * {
-  color: red;
+  color: $main-blue;
 }
