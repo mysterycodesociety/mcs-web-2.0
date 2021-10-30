@@ -66,12 +66,12 @@ Below, you will find more specific instructions for your operating system.
 1. [Git Clone](https://github.com/git-guides/git-clone) this repository onto your machine (see link for instructions).
 1. Change your directory to the cloned repository: `cd mcs-web` in terminal.
 1. Install dependencies: `npm install` in terminal.
-1. Build the site for the first time (generating a `_site` directory) by running `npx @11ty/eleventy` in terminal.
+1. Build the site for the first time (generating a `_site` directory) by running `npm run-script build` in terminal.
 
 
 ## Running the server
 
-1. Run `npx @11ty/eleventy --serve` in terminal to start the app server.
+1. Run `npm start` in terminal to start the app server.
 1. Open your browser to a new tab and view the app at `http://localhost:8080`
 
 
@@ -98,7 +98,7 @@ This workflow assumes you have already done all the 'Getting Started' pieces and
     ```
 1. Create a new terminal window or tab and run the server there.
     ```sh
-    npx @11ty/eleventy --serve
+    npm start
     ```
 1. Open your browser.  View the app in a new tab at `http://localhost:8080`.
 1. Do any work that you need to do.  Save changes to the files, and eleventy should rebuild the site automatically and show the changes in the browser.
@@ -114,3 +114,7 @@ This workflow assumes you have already done all the 'Getting Started' pieces and
     ```
 1. Go to the [repository on GitHub](https://github.com/mysterycodesociety/mcs-web/).  You should see the branch you just pushed.  Click the 'Compare & pull request' button to make a new Pull Request.
 1. On the Open a Pull Request page, type information a reviewer might need to review your work in the main body.  On the right hand menu, use the Settings icon in the Reviewers section to tag reviewers.  On the right hand menu, in the Label section add 'Code Review' as a label.  Click to Create Pull Request'.
+
+## CSS Files
+
+We use [Sass](https://sass-lang.com/) to write styles.  Any sass file (with extension `.scss`) in the assets/styles folder will get compiled to css and placed in the `_site/assets/styles` when you run `npm start` or `npm run-script build`.

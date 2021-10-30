@@ -49,7 +49,12 @@ module.exports = function(eleventyConfig) {
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy({'assets': 'assets' });
   eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("_includes/assets/");
+  eleventyConfig.addPassthroughCopy("_includes/assets/blog");
+  eleventyConfig.addPassthroughCopy("_includes/assets/images");
+  eleventyConfig.addPassthroughCopy("_includes/assets/scripts");
+
+  // sync compiled css
+  eleventyConfig.setBrowserSyncConfig({files: './_site/assets/styles/*.css'});
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
