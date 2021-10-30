@@ -1,0 +1,14 @@
+//page layout 
+.container {
+    display:flex;
+    width: min-content;
+    margin: var(--space-3x-large);
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
