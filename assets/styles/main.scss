@@ -6,9 +6,9 @@
 
 
 /* [ 1-design-tokens ] */
-@import "1-design-tokens/variables--color"; 
+@import "1-design-tokens/variables--color";
 @import "1-design-tokens/variables--spacing";
-@import "1-design-tokens/variables--typography"; 
+@import "1-design-tokens/variables--typography";
 
 /* [ 2-tools ] */
 //@import "2-tools/mixin--color";
@@ -30,7 +30,7 @@
 //grid, flex, etc.
 
 /* [6-components ] */
-@import "5-components/card";
+@import "6-components/card";
 
 /* [ 7-utilities ] */
 @import "7-utilities/u-color";
