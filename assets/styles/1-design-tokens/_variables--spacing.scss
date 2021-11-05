@@ -1,76 +1,77 @@
 /* Create the Global Spacing CSS Variables */
 // Base = 8px
 :root{
-    --space-unit: 0.5;
-    --space-0: 				calc(0rem * var(--space-unit));	//0px
-    --space-3x-small: 		calc(0.125rem * var(--space-unit));//2px
-    --space-2x-small:		calc(0.25rem * var(--space-unit)); //4px;
-    --space-x-small:		calc(0.5rem * var(--space-unit));	//8px;
-    --space-small:			calc(0.75rem * var(--space-unit));	//12px;
-    --space-medium:			calc(1rem * var(--space-unit)); 	//16px;
-    --space-large:			calc(1.25rem * var(--space-unit)); //20px;
-    --space-x-large:		calc(1.5rem * var(--space-unit));  //24px;
-    --space-2x-large:		calc(2rem * var(--space-unit)); 	//32px;
-    --space-3x-large:		calc(2.5rem * var(--space-unit)); 	//40px;
-    --space-4x-large:		calc(3rem * var(--space-unit)); 	//48px;
-    --space-5x-large:		calc(3.5rem * var(--space-unit)); 	//56px;
-    --space-6x-large:		calc(4rem * var(--space-unit)); 	//64px;
-    --space-7x-large:		calc(5rem * var(--space-unit)); 	//80px;
-    --space-8x-large:		calc(8rem * var(--space-unit)); 	//128px;
+  --space-unit: 0.5;
+  --space-0: 				  calc(0rem * var(--space-unit));	//0px
+  --space-3x-small: 	calc(0.125rem * var(--space-unit));//2px
+  --space-2x-small:		calc(0.25rem * var(--space-unit)); //4px;
+  --space-x-small:		calc(0.5rem * var(--space-unit));	//8px;
+  --space-small:			calc(0.75rem * var(--space-unit));	//12px;
+  --space-medium:			calc(1rem * var(--space-unit)); 	//16px;
+  --space-large:			calc(1.25rem * var(--space-unit)); //20px;
+  --space-x-large:		calc(1.5rem * var(--space-unit));  //24px;
+  --space-2x-large:		calc(2rem * var(--space-unit)); 	//32px;
+  --space-3x-large:		calc(2.5rem * var(--space-unit)); 	//40px;
+  --space-4x-large:		calc(3rem * var(--space-unit)); 	//48px;
+  --space-5x-large:		calc(3.5rem * var(--space-unit)); 	//56px;
+  --space-6x-large:		calc(4rem * var(--space-unit)); 	//64px;
+  --space-7x-large:		calc(5rem * var(--space-unit)); 	//80px;
+  --space-8x-large:		calc(8rem * var(--space-unit)); 	//128px;
+}
+
+/****** DO WE gO THIS ROUTE OR CREATE RESPONSIVE CLASSES ******/
+/* Create the Global Spacing CSS Variables */
+// Base = 16px
+@media (min-width: 1024px) {
+    :root{
+        --space-unit: 1;
     }
-    /****** DO WE gO THIS ROUTE OR CREATE RESPONSIVE CLASSES ******/
-    /* Create the Global Spacing CSS Variables */
-    // Base = 16px
-    @media (min-width: 1024px) {
-        :root{
-            --space-unit: 1;
-        }
-    }
-    // // Base = 24px
-    // @media (min-width: 1440px) {
-    // 	:root{
-    // 		--space-unit: 1.25;
-    // 	}
-    // }
-    
-    /****** DO WE NEED THESE IF WE HAVE THE MAP ******/
-    /* Create the Global Spacing SASS Variables */
-    $space-unit: #{var(--space-unit)};
-    $space-3x-small: #{var(--space-3x-small)};
-    $space-2x-small: #{var(--space-2x-small)};
-    $space-x-small: #{var(--space-x-small)};
-    $space-small: #{var(--space-small)};
-    $space-medium: #{var(--space-medium)};
-    $space-large: #{var(--space-large)};
-    $space-x-large: #{var(--space-x-large)};
-    $space-2x-large: #{var(--space-2x-large)};
-    $space-3x-large: #{var(--space-3x-large)};
-    
-    /* Create the Global Spacing SASS Variable Map */
-    $spacing-map: (
-        3x-small:	#{var(--space-3x-small)},	//2px
-        2x-small:	#{var(--space-2x-small)}, 	//4px;
-        x-small:	#{var(--space-x-small)},	//8px;
-        small:		#{var(--space-small)},		//12px;
-        medium:		#{var(--space-medium)},		//16px;
-        large:		#{var(--space-medium)}, 	//20px;
-        x-large:	#{var(--space-x-large)}, 	//24px;
-        2x-large:	#{var(--space-2x-large)},	//32px;
-        3x-large:	#{var(--space-3x-large)}, 	//40px;
-        4x-large:	#{var(--space-4x-large)}, 	//48px;
-        5x-large:	#{var(--space-5x-large)}, 	//56px;
-        6x-large:	#{var(--space-6x-large)}, 	//64px;
-        7x-large:	#{var(--space-7x-large)}, 	//80px;
-        8x-large:	#{var(--space-8x-large)} 	//128px;
-    );
-    
-    /****** DO WE NEED THESE IF WE CHANGE THE ROOT SPACE UNIT VALUE? ******/
-    // @media screen and (min-width: 768px) {
-    // 	.tablet-m {@include spacing-utilities(); }
-    // }
-    // @media screen and (min-width: 1014px) {
-    // 	.desktop-m {@include spacing-utilities(); }
-    // }
-    // @media screen and (min-width: 1248px) {
-    // 	.desktop-wide-m {@include spacing-utilities(); }
-    // }
+}
+// // Base = 24px
+// @media (min-width: 1440px) {
+// 	:root{
+// 		--space-unit: 1.25;
+// 	}
+// }
+
+/****** DO WE NEED THESE IF WE HAVE THE MAP ******/
+/* Create the Global Spacing SASS Variables */
+$space-unit: #{var(--space-unit)};
+$space-3x-small: #{var(--space-3x-small)};
+$space-2x-small: #{var(--space-2x-small)};
+$space-x-small: #{var(--space-x-small)};
+$space-small: #{var(--space-small)};
+$space-medium: #{var(--space-medium)};
+$space-large: #{var(--space-large)};
+$space-x-large: #{var(--space-x-large)};
+$space-2x-large: #{var(--space-2x-large)};
+$space-3x-large: #{var(--space-3x-large)};
+
+/* Create the Global Spacing SASS Variable Map */
+$spacing-map: (
+  3x-small:	#{var(--space-3x-small)},	//2px
+  2x-small:	#{var(--space-2x-small)}, 	//4px;
+  x-small:	#{var(--space-x-small)},	//8px;
+  small:		#{var(--space-small)},		//12px;
+  medium:		#{var(--space-medium)},		//16px;
+  large:		#{var(--space-medium)}, 	//20px;
+  x-large:	#{var(--space-x-large)}, 	//24px;
+  2x-large:	#{var(--space-2x-large)},	//32px;
+  3x-large:	#{var(--space-3x-large)}, 	//40px;
+  4x-large:	#{var(--space-4x-large)}, 	//48px;
+  5x-large:	#{var(--space-5x-large)}, 	//56px;
+  6x-large:	#{var(--space-6x-large)}, 	//64px;
+  7x-large:	#{var(--space-7x-large)}, 	//80px;
+  8x-large:	#{var(--space-8x-large)} 	//128px;
+);
+
+/****** DO WE NEED THESE IF WE CHANGE THE ROOT SPACE UNIT VALUE? ******/
+// @media screen and (min-width: 768px) {
+// 	.tablet-m {@include spacing-utilities(); }
+// }
+// @media screen and (min-width: 1014px) {
+// 	.desktop-m {@include spacing-utilities(); }
+// }
+// @media screen and (min-width: 1248px) {
+// 	.desktop-wide-m {@include spacing-utilities(); }
+// }
