@@ -1,3 +1,42 @@
+/* =================================================================
+    Created: 4/5/2021
+   ================================================================= */
+
+@import url('//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* [ 1-design-tokens ] */
+@import "1-design-tokens/variables--color";
+@import "1-design-tokens/variables--spacing";
+@import "1-design-tokens/variables--typography";
+
+/* [ 2-tools ] */
+//@import "2-tools/mixin--color";
+//@import "2-tools/mixin--spacing";
+//@import "2-tools/mixin--typography";
+
+/* [ 3-generic ] */
+@import "3-generic/normalize";
+
+
+/* [ 4-base-elements ] */
+@import "4-base-elements/base-typography";
+@import "4-base-elements/button";
+@import "4-base-elements/image";
+@import "4-base-elements/list";
+@import "4-base-elements/svg";
+
+/* [ 5-layout ] */
+//grid, flex, etc.
+
+/* [6-components ] */
+@import "6-components/card";
+
+/* [ 7-utilities ] */
+@import "7-utilities/u-color";
+@import "7-utilities/u-spacing";
+@import "7-utilities/u-typography";
+
 * {
   color: red;
 }
