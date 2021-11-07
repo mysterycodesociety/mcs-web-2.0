@@ -1,0 +1,118 @@
+.button {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 150px;
+    height: 48px;
+    border-radius: 50px;
+}
+.button-small {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 150px;
+    height: 32px;
+    border-radius: 50px;
+}
+.button-white {
+    left: 29.33%;
+    right: 29.33%;
+    top: 33.33%;
+    bottom: 33.33%;
+
+    font-family: Source Code Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+/* identical to box height, or 100% */
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+
+/* pinkpurple */
+.button-pinkpurple {
+    background:linear-gradient(83.32deg, #E91E63 -26.01%, #7B1FA2 125.58%);
+}
+/* yelloworange */
+.button-yelloworange {
+    background: linear-gradient(82.72deg, #FFC107 -27.18%, #E91E63 129.07%);
+}
+/* greenblue */
+.button-greenblue {
+    background: radial-gradient(206.25% 1464.84% at -25.33% 152.08%, #009688 0%, #0288D1 100%);
+}
+/* purple */
+.button-purple {
+    background:#7B1FA2;
+}
+/* blue */
+.button-blue {
+    background:#0288D1;
+}
+/* green */
+.button-green {
+    background:#009688;
+}
+/* pink */
+.button-pink {
+    background:#E91E63;;
+}
+/* button-whiteBGpurple */
+.button-whiteBGpurple {
+    background-color: #fff;
+}
+/* button-whiteBGgreen */
+.button-whiteBGgreen {
+    background-color: #fff;
+}
+.button-whiteBGpink {
+    background-color: #fff;
+}
+/* pinkpurple */
+.button-pinkpurple:hover {
+    background: linear-gradient(83.32deg, #750F32 -26.01%,#7B1FA2 125.58%);
+}
+/* yelloworange */
+.button-yelloworange:hover {
+    background: linear-gradient(82.72deg, #806104 -27.18%, #E91E63 129.07%);
+}
+/* greenblue */
+.button-greenblue:hover {
+    background: radial-gradient(206.25% 1464.84% at -25.33% 152.08%, #004B44 0%, #0288D1 100%);
+}
+/* purple */
+.button-purple:hover {
+    background: #3E1051;
+}
+/* blue */
+.button-blue:hover {
+    background:#014469;
+}
+/* green */
+.button-green:hover {
+    background:#004B44;
+}
+/* pink */
+.button-pink:hover {
+    background:#750F32;
+}
+/* whiteBGpurple */
+.button-whiteBGpurple:hover {
+    background: #7B1FA2;
+}
+/* whiteBGblue */
+.button-whiteBGblue:hover {
+    background: #0288D1;
+}
+/* whiteBGgreen */
+.button-whiteBGgreen:hover {
+    background: #CDEAE7;
+}
+/* whiteBGpink */
+.button-whiteBGpink:hover {
+    background: #FAD2E0;
+}
