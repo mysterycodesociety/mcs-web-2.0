@@ -1,0 +1,55 @@
+/* Create the Mixin for Utility Classes  */
+@mixin spacing-utilities($attribute: 'margin', $prefix: '-') {
+    //All Sides
+    @each $name, $value in $spacing-map {
+      &#{$prefix}#{$name} {
+        #{$attribute}: $value;
+      }
+    }
+    //Bottom
+    $newattribute: $attribute + '-bottom';
+    @each $name, $value in $spacing-map {
+      &b#{$prefix}#{$name} {
+        #{$newattribute}: $value;
+      }
+    }
+    //Top
+    $newattribute: $attribute + '-top';
+    @each $name, $value in $spacing-map {
+      &t#{$prefix}#{$name} {
+        #{$newattribute}: $value;
+      }
+    }
+    //Left
+    $newattribute: $attribute + '-left';
+    @each $name, $value in $spacing-map { 
+      &l#{$prefix}#{$name} {
+        #{$newattribute}: $value;
+      }
+    }
+    //Right
+    $newattribute: $attribute + '-right';
+    @each $name, $value in $spacing-map {
+      &r#{$prefix}#{$name} {
+        #{$newattribute}: $value;
+      }
+    }
+    //Horizontal or Both Left and Right
+    $newattribute1: $attribute + '-left';
+    $newattribute2: $attribute + '-right';
+    @each $name, $value in $spacing-map { 
+      &x#{$prefix}#{$name} {
+        #{$newattribute1}: $value;
+        #{$newattribute2}: $value;
+      }
+    }
+    //Vertical or Both Top and Bottom
+    $newattribute1: $attribute + '-top';
+    $newattribute2: $attribute + '-bottom';
+    @each $name, $value in $spacing-map {
+      &y#{$prefix}#{$name} {
+        #{$newattribute1}: $value;
+        #{$newattribute2}: $value;
+      }
+    }
+  }
