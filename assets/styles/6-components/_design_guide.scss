@@ -1,0 +1,38 @@
+#buttons {
+    margin: 0;
+    padding: 0;
+
+    div {
+        /* float: left; */
+        width: 600px;
+        height: 680px;
+        border: 1px dotted #ccc;
+        margin: 100px auto;
+        /* display: inline-block; */
+    }
+
+    li {
+        list-style: none;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .top {
+        height: 50px;
+        margin: 10px auto;
+    }
+
+    .box1 {
+        float: left;
+        width: 280px;
+        height: 680px;
+        border: 1px dotted #ccc;
+    }
+
+    .box2 {
+        float: right;
+        width: 280px;
+        height: 680px;
+        border: 1px dotted #ccc;
+    }
+}
