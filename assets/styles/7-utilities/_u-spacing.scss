@@ -1,7 +1,7 @@
-//.u-m { @include spacing-utilities(); }
-//.u-p { @include spacing-utilities(padding); }
+.u-m { @include spacing-utilities(); }
+.u-p { @include spacing-utilities(padding); }
 
-//margin and padding example layout 
+//margin and padding example layout
 %box {
     width: var(--space-3x-large);
     height: var(--space-3x-large);
