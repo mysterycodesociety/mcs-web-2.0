@@ -1,9 +1,8 @@
 /* =================================================================
-    Created: 4/5/2021
-   ================================================================= */
+Created: 4/5/2021
+================================================================= */
 
 @import url('//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 
 /* [ 1-design-tokens ] */
 @import "1-design-tokens/variables--color";
@@ -17,7 +16,6 @@
 
 /* [ 3-generic ] */
 @import "3-generic/normalize";
-
 
 /* [ 4-base-elements ] */
 @import "4-base-elements/base-typography";
@@ -38,5 +36,5 @@
 @import "7-utilities/u-typography";
 
 * {
-  color: red;
+  color: $main-blue;
 }
