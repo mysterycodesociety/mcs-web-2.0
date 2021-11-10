@@ -1,0 +1,13 @@
+/* Flex Box Layout */
+.flex {
+    display: flex;
+}
+.flex-row {
+	flex-direction: row;
+}
+.flex-column {
+	flex-direction: column;
+}
+.justify-content-space-around {
+    justify-content: space-around;
+}

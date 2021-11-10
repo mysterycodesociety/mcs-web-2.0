@@ -1,3 +1,17 @@
+/* Create the CSS Variables for White, Black, and Grays */
+:root {
+    --color-white:         255,255,255;//#ffffff    // black ratio 17.92    // white ratio ----
+    --color-gray-light-80: 230,230,230;//#e6e6e6    // black ratio 14.36    // white ratio 1.24
+    --color-gray-light-60: 204,204,204;//#cccccc    // black ratio 11.16    // white ratio 1.6
+    --color-gray-light-40: 179,179,179;//#b3b3b3    // black ratio 8.55     // white ratio 2.09
+    --color-gray-light-20: 153,153,153;//#999999    // black ratio 6.29     // white ratio 2.84
+    --color-gray-base:     128,128,128;//#808080    // black ratio 4.53     // white ratio 3.94
+    --color-gray-dark-20:  102,102,102;//#666666    // black ratio 3.12     // white ratio 5.74
+    --color-gray-dark-40:  77,77,77;//#4d4d4d       // black ratio 2.12     // white ratio 8.45
+    --color-gray-dark-60:  20,20,20;//#333333       // black ratio 1.41     // white ratio 12.63
+    --color-black:         15,15,15;//#171717       // black ratio ----     // white ratio 1.47
+}
+/* Create the SASS Variables for Brand Colors */
 $main-green: #009688;
 $main-green-dark: #004B44;
 $main-green-light: #80CBC4;
@@ -32,3 +46,54 @@ $main-yellow-light: #FFE083;
 $secondary-yellow: #FFE79D;
 $secondary-yellow-dark: #80744F;
 $secondary-yellow-light: #FFF3CE;
+
+
+/* Create the Color Variable Map - Used to create color utility classes */
+$color-map: (
+    main-green:         $main-green,
+    main-green-light:   $main-green-light,
+    main-green-dark:    $main-green-dark,
+    main-purple:        $main-purple,
+    main-purple-light:  $main-purple-light,
+    main-purple-dark:   $main-purple-dark,
+    main-blue:          $main-blue,
+    main-blue-light:    $main-blue-light,
+    main-blue-dark:     $main-blue-dark,
+    main-pink:          $main-pink,
+    main-pink-light:    $main-pink-light,
+    main-pink-dark:     $main-pink-dark,
+    main-yellow:        $main-yellow,
+    main-yellow-light:  $main-yellow-light,
+    main-yellow-dark:   $main-yellow-dark,
+    secondary-green:    $secondary-green,
+    secondary-green-light:   $secondary-green-light,
+    secondary-green-dark:    $secondary-green-dark,
+    secondary-purple:        $secondary-purple,
+    secondary-purple-light:  $secondary-purple-light,
+    secondary-purple-dark:   $secondary-purple-dark,
+    secondary-blue:          $secondary-blue,
+    secondary-blue-light:    $secondary-blue-light,
+    secondary-blue-dark:     $secondary-blue-dark,
+    secondary-pink:          $secondary-pink,
+    secondary-pink-light:    $secondary-pink-light,
+    secondary-pink-dark:     $secondary-pink-dark,
+    secondary-yellow:        $secondary-yellow,
+    secondary-yellow-light:  $secondary-yellow-light,
+    secondary-yellow-dark:   $secondary-yellow-dark,
+    white:              #{var(--color-white)},
+    gray-light-80:      #{var(--color-gray-light-80)},
+    gray-light-60: #{var(--color-gray-light-60)},
+    gray-light-40: #{var(--color-gray-light-40)},
+    gray-light-20: #{var(--color-gray-light-20)},
+    gray-base:     #{var(--color-gray-base)},
+    gray-dark-20:  #{var(--color-gray-dark-20)},
+    gray-dark-40:  #{var(--color-gray-dark-40)},
+    gray-dark-60:  #{var(--color-gray-dark-60)},
+    black:         #{var(--color-black)},
+);
+
+$color-opacity-map: (
+    main-green:         $main-green,
+    main-green-light:   $main-green-light,
+    main-green-dark:    $main-green-dark,
+);

@@ -10,7 +10,7 @@ Created: 4/5/2021
 @import "1-design-tokens/variables--typography";
 
 /* [ 2-tools ] */
-//@import "2-tools/mixin--color";
+@import "2-tools/mixin--color";
 //@import "2-tools/mixin--spacing";
 //@import "2-tools/mixin--typography";
 
@@ -25,7 +25,8 @@ Created: 4/5/2021
 @import "4-base-elements/svg";
 
 /* [ 5-layout ] */
-//grid, flex, etc.
+@import "5-layout/design-system-layout";
+@import "5-layout/flex-box";
 
 /* [6-components ] */
 @import "6-components/card";
@@ -35,6 +36,6 @@ Created: 4/5/2021
 @import "7-utilities/u-spacing";
 @import "7-utilities/u-typography";
 
-* {
-  color: $main-blue;
-}
+// * {
+//   color: $main-blue;
+// }
