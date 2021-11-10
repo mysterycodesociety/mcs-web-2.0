@@ -12,7 +12,7 @@
 
 /* [ 2-tools ] */
 //@import "2-tools/mixin--color";
-//@import "2-tools/mixin--spacing";
+@import "2-tools/mixin--spacing";
 //@import "2-tools/mixin--typography";
 
 /* [ 3-generic ] */
@@ -28,6 +28,7 @@
 
 /* [ 5-layout ] */
 //grid, flex, etc.
+@import "5-layout/flexbox-or-css-grid-goes-here.scss";
 
 /* [6-components ] */
 @import "6-components/card";
