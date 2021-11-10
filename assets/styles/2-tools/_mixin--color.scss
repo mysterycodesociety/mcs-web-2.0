@@ -1,0 +1,53 @@
+/* Colors - Create the Mixin for Utility Classes  */
+// @mixin background-color($attribute: 'background-color', $prefix: '-') {
+
+//     @each $name,
+//     $value in $color-map {
+//         &#{$prefix}#{$name} {
+//             #{$attribute}: $value;
+//         }
+//     }
+// }
+
+/* Colors - Create the Mixin for Utility Classes  */
+@mixin color($attribute: 'color', $prefix: '-', $opacity: 1) {
+
+    @each $name,
+    $value in $color-map {
+        &#{$prefix}#{"" + $name} {
+            #{$attribute}: rgba($value, $opacity);;
+        }
+    }
+}
+
+/* Colors - Create the Mixin for Utility Classes  */
+@mixin border-color($attribute: 'border-color', $prefix: '-', $opacity: 1) {
+
+    @each $name,
+    $value in $color-map {
+        &#{$prefix}#{"" + $name} {
+            #{$attribute}: rgba($value, $opacity);
+        }
+    }
+}
+
+/* Colors - Create the Mixin for Utility Classes  */
+@mixin background-color($attribute: 'background-color', $prefix: '-', $opacity: 1) {
+    //all colors
+    @each $name,
+    $value in $color-map {
+        &#{$prefix}#{"" + $name} {
+            #{$attribute}: rgba($value, $opacity);
+        }
+    }
+
+    //Opacity = .5 (not all the colors)
+    $opacity: 0.5;
+    @each $name,
+    $value in $color-opacity-map {
+        &-o#{$prefix}#{"" + $name} {
+            #{$attribute}: rgba($value, $opacity);
+        }
+    }
+}
+
