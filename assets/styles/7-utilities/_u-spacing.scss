@@ -1,22 +1,9 @@
 .u-m { @include spacing-utilities(); }
 .u-p { @include spacing-utilities(padding); }
 
-//margin and padding example layout
-%box {
-    width: var(--space-3x-large);
-    height: var(--space-3x-large);
-    background-color: #FFFFFF;
+.mb-16 {
+	margin-bottom: 16px;
 }
-.box {
-    @extend %box;
-}
-.box--hasBorder {
-    @extend %box;
-    border: 1px solid #212121;
-}
-.m-color {
-    background-color:#F7D289;
-}
-.p-color {
-    background-color:#B8F1BB;
+.mr-16 {
+	margin-right: 16px;
 }

@@ -1,0 +1,18 @@
+/*  Apply the Mixin **Color** for Utility Classes,
+	Generates a single class for all font size options
+    i.e.    .u-background-color-main-green 
+            .u-text-color-main-green-light
+            .u-border-color-main-green-dark
+ */
+
+.u-background-color{
+	@include background-color();
+}
+
+.u-text-color{
+	@include color();
+}
+
+.u-border-color{
+	@include border-color();
+}
