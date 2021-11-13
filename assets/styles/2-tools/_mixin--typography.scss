@@ -1,0 +1,19 @@
+
+
+/* Font-Size - Create the Mixin for Utility Classes  */
+@mixin font-sizing($attribute: 'font-size', $prefix: '-') {
+    @each $name, $value in $font-size-map {
+        &#{$prefix}#{$name} {
+            #{$attribute}: $value;
+        } 
+    }
+}
+
+/* Line-height - Create the Mixin for Utility Classes  */
+@mixin line-height($attribute: 'line-height', $prefix: '-') {
+    @each $name, $value in $line-height-map {
+        &#{$prefix}#{$name} {
+            #{$attribute}: $value;
+        }
+    }
+}

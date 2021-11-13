@@ -38,33 +38,41 @@
 	border: 1px solid gray;
 	border-radius: 8px;
 	background-color: white;
-	text-align: center;
 	padding:40px;
 }
 
 //color example layout 
 .color-box {
-	width: 100px;
-	height: 100px;
+	width: var(--space-8x-large);
+    height: var(--space-8x-large);
 	padding: 8px;
 }
 
 //margin and padding example layout 
-// %spacing-box {
-//     width: var(--space-3x-large);
-//     height: var(--space-3x-large);
-//     background-color: #FFFFFF;
-// }
-// .spacing-box {
-//     @extend %spacing-box;
-// }
-// .spacing-box--hasBorder {
-//     @extend %spacing-box;
-//     border: 1px solid #212121;
-// }
-// .m-color {
-//     background-color:$secondary-yellow-light;
-// }
-// .p-color {
-//     background-color:$secondary-green-light;
-// }
+%spacing-box {
+    width: var(--space-3x-large);
+    height: var(--space-3x-large);
+    background-color: #FFFFFF;
+}
+.spacing-box {
+    @extend %spacing-box;
+}
+.spacing-box--hasBorder {
+    @extend %spacing-box;
+    border: 1px solid #212121;
+}
+.m-color {
+    background-color:$secondary-yellow-light;
+}
+.p-color {
+    background-color:$secondary-green-light;
+}
+.spacing-box-container {
+	display:flex;
+	width: min-content;
+	margin: var(--space-3x-large);
+}
+
+.box-sizing-reset {
+	box-sizing: content-box !important;
+}

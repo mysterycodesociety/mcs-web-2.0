@@ -13,11 +13,12 @@ Created: 4/5/2021
 
 /* [ 2-tools ] */
 @import "2-tools/mixin--color";
-//@import "2-tools/mixin--spacing";
-//@import "2-tools/mixin--typography";
+@import "2-tools/mixin--spacing";
+@import "2-tools/mixin--typography";
 
 /* [ 3-generic ] */
 @import "3-generic/normalize";
+@import "3-generic/box-sizing";
 
 /* [ 4-base-elements ] */
 @import "4-base-elements/base-typography";
@@ -37,7 +38,3 @@ Created: 4/5/2021
 @import "7-utilities/u-color";
 @import "7-utilities/u-spacing";
 @import "7-utilities/u-typography";
-
-// * {
-//   color: $main-blue;
-// }

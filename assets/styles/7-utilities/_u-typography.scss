@@ -1,0 +1,13 @@
+/* typography styles */
+/*  Apply the Mixin **typography** for Utility Classes,
+	Generates a single class for all type size options
+    i.e. .u-font-size-3x-large 
+    
+    */
+//// TODO: Finalize the font size utilities and add examples to the Design Guide TG - 11-12-21
+
+.u-font-size { @include font-sizing(); }
+
+/* text alignment styles */
+.u-text-left {text-align: center;}
+.u-text-center {text-align: center;}
