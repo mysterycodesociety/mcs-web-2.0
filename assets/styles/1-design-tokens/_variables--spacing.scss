@@ -1,5 +1,5 @@
 /* Create the Global Spacing CSS Variables */
-// Base = 8px
+// Base = 8px (Spacing for mobile)
 :root{
     --space-unit: 0.5;
     --space-0: 				calc(0rem * var(--space-unit));	//0px
@@ -17,60 +17,143 @@
     --space-6x-large:		calc(4rem * var(--space-unit)); 	//64px;
     --space-7x-large:		calc(5rem * var(--space-unit)); 	//80px;
     --space-8x-large:		calc(8rem * var(--space-unit)); 	//128px;
+}
+
+/* Create the Global Spacing CSS Variables */
+// Base = 16px  (Spacing for ipad landscape and up)
+@media (min-width: 1024px) {
+    :root{
+        --space-unit: 1;
     }
-    /****** DO WE gO THIS ROUTE OR CREATE RESPONSIVE CLASSES ******/
-    /* Create the Global Spacing CSS Variables */
-    // Base = 16px
-    @media (min-width: 1024px) {
-        :root{
-            --space-unit: 1;
-        }
-    }
-    // // Base = 24px
-    // @media (min-width: 1440px) {
-    // 	:root{
-    // 		--space-unit: 1.25;
-    // 	}
-    // }
-    
-    /****** DO WE NEED THESE IF WE HAVE THE MAP ******/
-    /* Create the Global Spacing SASS Variables */
-    $space-unit: #{var(--space-unit)};
-    $space-3x-small: #{var(--space-3x-small)};
-    $space-2x-small: #{var(--space-2x-small)};
-    $space-x-small: #{var(--space-x-small)};
-    $space-small: #{var(--space-small)};
-    $space-medium: #{var(--space-medium)};
-    $space-large: #{var(--space-large)};
-    $space-x-large: #{var(--space-x-large)};
-    $space-2x-large: #{var(--space-2x-large)};
-    $space-3x-large: #{var(--space-3x-large)};
-    
-    /* Create the Global Spacing SASS Variable Map */
-    $spacing-map: (
-        3x-small:	#{var(--space-3x-small)},	//2px
-        2x-small:	#{var(--space-2x-small)}, 	//4px;
-        x-small:	#{var(--space-x-small)},	//8px;
-        small:		#{var(--space-small)},		//12px;
-        medium:		#{var(--space-medium)},		//16px;
-        large:		#{var(--space-medium)}, 	//20px;
-        x-large:	#{var(--space-x-large)}, 	//24px;
-        2x-large:	#{var(--space-2x-large)},	//32px;
-        3x-large:	#{var(--space-3x-large)}, 	//40px;
-        4x-large:	#{var(--space-4x-large)}, 	//48px;
-        5x-large:	#{var(--space-5x-large)}, 	//56px;
-        6x-large:	#{var(--space-6x-large)}, 	//64px;
-        7x-large:	#{var(--space-7x-large)}, 	//80px;
-        8x-large:	#{var(--space-8x-large)} 	//128px;
-    );
-    
-    /****** DO WE NEED THESE IF WE CHANGE THE ROOT SPACE UNIT VALUE? ******/
-    // @media screen and (min-width: 768px) {
-    // 	.tablet-m {@include spacing-utilities(); }
-    // }
-    // @media screen and (min-width: 1014px) {
-    // 	.desktop-m {@include spacing-utilities(); }
-    // }
-    // @media screen and (min-width: 1248px) {
-    // 	.desktop-wide-m {@include spacing-utilities(); }
-    // }
+}
+
+/* Create the Global Spacing SASS Variables 
+    Convert CSS Variables into SASS Variables */
+$space-unit: #{var(--space-unit)};
+$space-3x-small: #{var(--space-3x-small)};
+$space-2x-small: #{var(--space-2x-small)};
+$space-x-small: #{var(--space-x-small)};
+$space-small: #{var(--space-small)};
+$space-medium: #{var(--space-medium)};
+$space-large: #{var(--space-large)};
+$space-x-large: #{var(--space-x-large)};
+$space-2x-large: #{var(--space-2x-large)};
+$space-3x-large: #{var(--space-3x-large)};
+
+/* Create the Global Spacing SASS Variable Map 
+    Used to generate the utility classes */
+$spacing-map: (
+    3x-small:	#{var(--space-3x-small)},	//2px
+    2x-small:	#{var(--space-2x-small)}, 	//4px;
+    x-small:	#{var(--space-x-small)},	//8px;
+    small:		#{var(--space-small)},		//12px;
+    medium:		#{var(--space-medium)},		//16px;
+    large:		#{var(--space-large)}, 	    //20px;
+    x-large:	#{var(--space-x-large)}, 	//24px;
+    2x-large:	#{var(--space-2x-large)},	//32px;
+    3x-large:	#{var(--space-3x-large)}, 	//40px;
+    4x-large:	#{var(--space-4x-large)}, 	//48px;
+    5x-large:	#{var(--space-5x-large)}, 	//56px;
+    6x-large:	#{var(--space-6x-large)}, 	//64px;
+    7x-large:	#{var(--space-7x-large)}, 	//80px;
+    8x-large:	#{var(--space-8x-large)} 	//128px;
+);
+
+/* Default Spacing Options 
+    Used to create spacing standards
+*/
+:root {
+    /* 
+    Stack = Bottom Margin
+    Size Options: x-small, small, medium/default, larger or x-large */
+    --space-stack-default:  0 0 var(--space-medium) 0;		//8px	16px;
+	--space-stack-x-small:  0 0 var(--space-2x-small) 0;	//2px	4px;
+	--space-stack-small:  	0 0 var(--space-x-small) 0;		//4px	8px;
+	--space-stack-medium:  	0 0 var(--space-medium) 0;		//8px	16px;
+	--space-stack-large:  	0 0 var(--space-2x-large) 0;	//16px	32px;
+	--space-stack-x-large:  0 0 var(--space-6x-large) 0;	//32px	64px;
+	/* 
+    Inline = Right Margin 
+    Size Options: 2x-small, x-small, small, medium/default, larger or x-large */
+	--space-inline-default: 0 var(--space-medium) 0 0;
+	--space-inline-2x-small:0 var(--space-3x-small) 0 0;
+	--space-inline-x-small: 0 var(--space-2x-small) 0 0;
+	--space-inline-small:  	0 var(--space-x-small) 0 0;
+	--space-inline-medium: 	0 var(--space-medium) 0 0;
+	--space-inline-large:  	0 var(--space-2x-large) 0 0;
+	--space-inline-x-large:	0 var(--space-6x-large) 0 0;
+    /* 
+    Inset = Padding Equal
+    Use for buttons, cards, etc.
+    Size Options: small, medium, larger or x-large
+    */
+    --space-inset-small:   var(--space-x-small) var(--space-x-small) var(--space-x-small) var(--space-x-small); //8
+	--space-inset-medium:  var(--space-medium) var(--space-medium) var(--space-medium) var(--space-medium); //16
+	--space-inset-large:   var(--space-x-large) var(--space-x-large) var(--space-x-large) var(--space-x-large); //24
+    --space-inset-x-large: var(--space-2x-large) var(--space-2x-large) var(--space-2x-large) var(--space-2x-large); //32
+	/* 
+    Inset Short = Padding Short & Wide
+    Use for buttons, cards, etc.
+    Size Options: small, medium, larger or x-large
+    */
+	--space-inset-short-small:   var(--space-2x-small) var(--space-x-small) var(--space-2x-small) var(--space-x-small); //4 8 4 8
+	--space-inset-short-medium:  var(--space-x-small) var(--space-medium) var(--space-x-small) var(--space-medium); //8 16 8 16
+	--space-inset-short-large:   var(--space-medium) var(--space-x-large) var(--space-medium) var(--space-x-large); //16 24 16 24
+    --space-inset-short-x-large: var(--space-x-large) var(--space-2x-large) var(--space-x-large) var(--space-2x-large); //24 32 24 32
+	/* 
+    Inset Tall = Padding Tall & Narrow
+    Use for buttons, cards, etc.
+    Size Options: small, medium, larger or x-large
+    */
+	--space-inset-tall-small:   var(--space-x-small) var(--space-2x-small) var(--space-x-small) var(--space-2x-small); //8 4 8 4
+	--space-inset-tall-medium: var(--space-medium) var(--space-x-small) var(--space-medium) var(--space-x-small); //16 8 16 8
+	--space-inset-tall-large:  var(--space-x-large) var(--space-medium) var(--space-x-large) var(--space-medium); //24 16 24 16
+    --space-inset-tall-x-large:  var(--space-2x-large) var(--space-x-large) var(--space-2x-large) var(--space-x-large); //32 24 32 24
+}
+
+/* Create the Space Stack SASS Variable Map 
+    Used to generate the utility classes */
+$space-stack-map: (
+	space-stack-default:	#{var(--space-stack-default)},
+    space-stack-x-small:	#{var(--space-stack-x-small)},
+    space-stack-small:	    #{var(--space-stack-small)},
+    space-stack-medium:	    #{var(--space-stack-medium)},
+    space-stack-large:	    #{var(--space-stack-large)},
+    space-stack-x-large:	#{var(--space-stack-x-large)}
+);
+
+$space-inline-map: (
+	space-inline-default:	#{var(--space-inline-default)},
+    space-inline-x-small:	#{var(--space-inline-x-small)},
+    space-inline-small:	    #{var(--space-inline-small)},
+    space-inline-medium:	#{var(--space-inline-medium)},
+    space-inline-large:	    #{var(--space-inline-large)},
+    space-inline-x-large:	#{var(--space-inline-x-large)}
+);
+
+$space-inset-map: (
+	space-inset-default:	#{var(--space-inset-default)},
+    space-inset-x-small:	#{var(--space-inset-x-small)},
+    space-inset-small:	    #{var(--space-inset-small)},
+    space-inset-medium:	    #{var(--space-inset-medium)},
+    space-inset-large:	    #{var(--space-inset-large)},
+    space-inset-x-large:	#{var(--space-inset-x-large)}
+);
+
+$space-inset-short-map: (
+	space-inset-short-default:	#{var(--space-inset-short-default)},
+    space-inset-short-x-small:	#{var(--space-inset-short-x-small)},
+    space-inset-short-small:	#{var(--space-inset-short-small)},
+    space-inset-short-medium:	#{var(--space-inset-short-medium)},
+    space-inset-short-large:	#{var(--space-inset-short-large)},
+    space-inset-short-x-large:	#{var(--space-inset-short-x-large)}
+);
+
+$space-inset-tall-map: (
+	space-inset-tall-default:	#{var(--space-inset-tall-default)},
+    space-inset-tall-x-small:	#{var(--space-inset-tall-x-small)},
+    space-inset-tall-small:	    #{var(--space-inset-tall-small)},
+    space-inset-tall-medium:	#{var(--space-inset-tall-medium)},
+    space-inset-tall-large:	    #{var(--space-inset-tall-large)},
+    space-inset-tall-x-large:	#{var(--space-inset-tall-x-large)}
+);

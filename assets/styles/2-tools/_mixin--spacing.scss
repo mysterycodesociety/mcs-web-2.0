@@ -53,3 +53,59 @@
       }
     }
   }
+
+  /* margin stack utilities 
+    uses spacing maps from _variable-spacing */
+@mixin space-stack($attribute: 'margin', $prefix: '-') {
+
+  @each $name,
+  $value in $space-stack-map {
+      &#{$prefix}#{$name} {
+          #{$attribute}: $value;
+      }
+  }
+}
+
+/* margin inline utilities */
+@mixin space-inline($attribute: 'margin', $prefix: '-') {
+
+  @each $name,
+  $value in $space-inline-map {
+      &#{$prefix}#{$name} {
+          #{$attribute}: $value;
+      }
+  }
+}
+
+/* padding inset utilities */
+@mixin space-inset($attribute: 'padding', $prefix: '-') {
+
+  @each $name,
+  $value in $space-inset-map {
+      &#{$prefix}#{$name} {
+          #{$attribute}: $value;
+      }
+  }
+}
+
+/* padding inset-short utilities */
+@mixin space-inset-short($attribute: 'padding', $prefix: '-') {
+
+  @each $name,
+  $value in $space-inset-short-map {
+      &#{$prefix}#{$name} {
+          #{$attribute}: $value;
+      }
+  }
+}
+
+/* padding inset-tall utilities */
+@mixin space-inset-tall($attribute: 'padding', $prefix: '-') {
+
+  @each $name,
+  $value in $space-inset-tall-map {
+      &#{$prefix}#{$name} {
+          #{$attribute}: $value;
+      }
+  }
+}

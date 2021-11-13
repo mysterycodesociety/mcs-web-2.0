@@ -1,8 +1,10 @@
 /* =================================================================
-Created: 4/5/2021
+Global Styles for Mystery Code Society Website - 11-2021 
 ================================================================= */
 
 @import url('//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,900;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 /* [ 1-design-tokens ] */
 @import "1-design-tokens/variables--color";
@@ -11,11 +13,12 @@ Created: 4/5/2021
 
 /* [ 2-tools ] */
 @import "2-tools/mixin--color";
-//@import "2-tools/mixin--spacing";
-//@import "2-tools/mixin--typography";
+@import "2-tools/mixin--spacing";
+@import "2-tools/mixin--typography";
 
 /* [ 3-generic ] */
 @import "3-generic/normalize";
+@import "3-generic/box-sizing";
 
 /* [ 4-base-elements ] */
 @import "4-base-elements/base-typography";

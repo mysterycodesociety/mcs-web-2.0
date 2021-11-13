@@ -1,0 +1,78 @@
+/*  Apply the Mixin **Font-Size** for Utility Classes,
+	Generates a single class for all font size options
+    i.e.    .u-font-size-3x-large { font-size: var(--font-size-3x-large); }
+            .u-lg-font-size-3x-large { font-size: var(--font-size-3x-large); }
+ */
+ .u-font-size {
+	@include font-sizing();
+}
+
+@media (min-width: 1024px) {
+	.u-lg-font-size {
+		@include font-sizing();
+	}
+}
+
+/*  Apply the Mixin **Line-Height** for Utility Classes, 
+	Generates a single class for all font size options
+    i.e.    .u-line-height-large { line-height: var(--line-height-large); }
+            .u-lg-line-height-x-large { line-height: var(--line-height-x-large); }
+ */
+.u-line-height {
+	@include line-height();
+}
+
+@media (min-width: 1024px) {
+	.u-lg-line-height {
+		@include line-height();
+	}
+}
+
+//  Font-Weights
+.u-font-weight-regular {
+	font-weight: var(--$font-weight-regular);
+}
+
+.u-font-weight-bold {
+	font-weight: var(--font-weight-bold);
+}
+
+// Text Transform
+.u-text-lowercase {
+	text-transform: lowercase !important;
+}
+
+.u-text-uppercase {
+	text-transform: uppercase !important;
+}
+
+.u-text-capitalize {
+	text-transform: capitalize !important;
+}
+
+//Text Alignment
+.u-text-align-left {
+	text-align: left;
+}
+
+.u-text-align-right {
+	text-align: right;
+}
+
+.u-text-align-center {
+	text-align: center;
+}
+
+@media (min-width: 1024px) {
+	.u-lg-text-align-left {
+		text-align: left;
+	}
+
+	.u-lg-text-align-right {
+		text-align: right;
+	}
+
+	.u-lg--align-center {
+		text-align: center;
+	}
+}

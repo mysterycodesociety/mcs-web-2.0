@@ -1,9 +1,36 @@
-//.u-m { @include spacing-utilities(); }
-//.u-p { @include spacing-utilities(padding); }
+/*  Apply the Mixin **Spacing** for Utility Classes,
+	Generates a single class for all space size options
+	m or p = all sides,
+	mb or pb = bottom only,
+	mt or pt = top only,
+	ml or pl = left only, 
+	mr or pr = right only
+	mx or px = x axis (left and right sides)
+	my or py = y axis (top and bottom)
+    i.e.    .u-[ m | mb | mt | ml | mr | mx | my ]-[ spacing value (see spacing-variables) ]  
+			.u-[ p | pb | pt | pl | pr | px | py ]-[ spacing value (see spacing-variables) ]  
+ */
 
-.mb-16 {
-	margin-bottom: 16px;
-}
-.mr-16 {
-	margin-right: 16px;
+.u-m { @include spacing-utilities(); }
+.u-p { @include spacing-utilities(padding); }
+
+
+/* Preset Spacing 
+    Stacked = Margin Bottom
+    Inline = Margin Right
+    Inset = Padding Equal
+    Inset Short = Padding Short & Wide
+    Inset Tall = Padding Tall & Narrow
+*/
+.u { @include space-stack(); }
+.u { @include space-inline(); }
+.u { @include space-inset(); }
+.u { @include space-inset-short(); }
+.u { @include space-inset-tall(); }
+@media (min-width: 1024px) {
+    .u-lg { @include space-stack(); }
+    .u-lg { @include space-inline(); }
+    .u-lg { @include space-inset(); }
+    .u-lg { @include space-inset-short(); }
+    .u-lg { @include space-inset-tall(); }
 }
