@@ -1,15 +1,15 @@
 /* Create the CSS Variables for White, Black, and Grays */
 :root {
-    --color-white:         255,255,255;//#ffffff    // black ratio 17.92    // white ratio ----
-    --color-gray-light-80: 230,230,230;//#e6e6e6    // black ratio 14.36    // white ratio 1.24
-    --color-gray-light-60: 204,204,204;//#cccccc    // black ratio 11.16    // white ratio 1.6
-    --color-gray-light-40: 179,179,179;//#b3b3b3    // black ratio 8.55     // white ratio 2.09
-    --color-gray-light-20: 153,153,153;//#999999    // black ratio 6.29     // white ratio 2.84
-    --color-gray-base:     128,128,128;//#808080    // black ratio 4.53     // white ratio 3.94
-    --color-gray-dark-20:  102,102,102;//#666666    // black ratio 3.12     // white ratio 5.74
-    --color-gray-dark-40:  77,77,77;//#4d4d4d       // black ratio 2.12     // white ratio 8.45
-    --color-gray-dark-60:  20,20,20;//#333333       // black ratio 1.41     // white ratio 12.63
-    --color-black:         15,15,15;//#171717       // black ratio ----     // white ratio 1.47
+    --color-white:         rgb(255,255,255);//#ffffff    // black ratio 17.92    // white ratio ----
+    --color-gray-light-80: rgb(230,230,230);//#e6e6e6    // black ratio 14.36    // white ratio 1.24
+    --color-gray-light-60: rgb(204,204,204);//#cccccc    // black ratio 11.16    // white ratio 1.6
+    --color-gray-light-40: rgb(179,179,179);//#b3b3b3    // black ratio 8.55     // white ratio 2.09
+    --color-gray-light-20: rgb(153,153,153);//#999999    // black ratio 6.29     // white ratio 2.84
+    --color-gray-base:     rgb(128,128,128);//#808080    // black ratio 4.53     // white ratio 3.94
+    --color-gray-dark-20:  rgb(102,102,102);//#666666    // black ratio 3.12     // white ratio 5.74
+    --color-gray-dark-40:  rgb(77,77,77);//#4d4d4d       // black ratio 2.12     // white ratio 8.45
+    --color-gray-dark-60:  rgb(20,20,20);//#333333       // black ratio 1.41     // white ratio 12.63
+    --color-black:         rgb(15,15,15);//#171717       // black ratio ----     // white ratio 1.47
 }
 /* Create the SASS Variables for Brand Colors */
 $main-green: #009688;

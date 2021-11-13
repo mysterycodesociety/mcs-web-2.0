@@ -1,15 +1,4 @@
 /* Colors - Create the Mixin for Utility Classes  */
-// @mixin background-color($attribute: 'background-color', $prefix: '-') {
-
-//     @each $name,
-//     $value in $color-map {
-//         &#{$prefix}#{$name} {
-//             #{$attribute}: $value;
-//         }
-//     }
-// }
-
-/* Colors - Create the Mixin for Utility Classes  */
 @mixin color($attribute: 'color', $prefix: '-', $opacity: 1) {
 
     @each $name,
@@ -51,3 +40,36 @@
     }
 }
 
+/* Button Colors - Create colors for buttons */
+@mixin button-gradient($color: 'pink', $contrast-color: 'purple') {
+    background: linear-gradient(82.72deg, map-get($color-map, 'main-' + $color) -27.18%, map-get($color-map, 'main-' + $contrast-color) 129.07%);
+
+    &:hover {
+        background: linear-gradient(82.72deg, map-get($color-map, 'main-' + $color + '-dark') -27.18%, map-get($color-map, 'main-' + $contrast-color) 129.07%);
+    }
+}
+
+@mixin button-radial-gradient($color: 'pink', $contrast-color: 'purple') {
+    background: radial-gradient(206.25% 1464.84% at -25.33% 152.08%, map-get($color-map, 'main-' + $color) 0%, map-get($color-map, 'main-' + $contrast-color) 100%);
+
+    &:hover {
+        background: radial-gradient(206.25% 1464.84% at -25.33% 152.08%, map-get($color-map, 'main-' + $color + '-dark') 0%, map-get($color-map, 'main-' + $contrast-color) 100%);
+    }
+}
+
+@mixin button-solid($color: 'purple') {
+    background: map-get($color-map, 'main-' + $color);
+
+    &:hover {
+        background: map-get($color-map, 'main-' + $color + '-dark');
+    }
+}
+
+@mixin button-light($color: 'purple') {
+    color: map-get($color-map, 'main-' + $color);
+    background: transparent;
+
+    &:hover {
+        background: map-get($color-map, 'secondary-' + $color + '-light');
+    }
+}
