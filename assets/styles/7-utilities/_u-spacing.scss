@@ -13,3 +13,24 @@
 
 .u-m { @include spacing-utilities(); }
 .u-p { @include spacing-utilities(padding); }
+
+
+/* Preset Spacing 
+    Stacked = Margin Bottom
+    Inline = Margin Right
+    Inset = Padding Equal
+    Inset Short = Padding Short & Wide
+    Inset Tall = Padding Tall & Narrow
+*/
+.u { @include space-stack(); }
+.u { @include space-inline(); }
+.u { @include space-inset(); }
+.u { @include space-inset-short(); }
+.u { @include space-inset-tall(); }
+@media (min-width: 1024px) {
+    .u-lg { @include space-stack(); }
+    .u-lg { @include space-inline(); }
+    .u-lg { @include space-inset(); }
+    .u-lg { @include space-inset-short(); }
+    .u-lg { @include space-inset-tall(); }
+}

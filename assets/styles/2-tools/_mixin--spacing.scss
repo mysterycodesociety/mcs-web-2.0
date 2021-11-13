@@ -54,7 +54,8 @@
     }
   }
 
-  /* margin stack utilities */
+  /* margin stack utilities 
+    uses spacing maps from _variable-spacing */
 @mixin space-stack($attribute: 'margin', $prefix: '-') {
 
   @each $name,
