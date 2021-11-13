@@ -1,25 +1,7 @@
 /* Create the Global Font CSS Variables */
+/* Mobile Size  - Create the Global font and line-height CSS Variables 
+    -space-unit:.5;  //Base 8px (defined in _variables--spacing) */
 :root {
-    --font-family-open-sans: 'Open Sans', sans-serif;
-    --font-family-source-code-pro: 'Source Code Pro', monospace;
-    --font-family-share-tech-mono: 'Share Tech Mono', monospace;
-
-	// --space-unit: 1;
-	// --font-size-4x-large: 	calc(4rem * var(--space-unit));
-	// --font-size-3x-large: 	calc(2.9792rem * var(--space-unit));
-	// --font-size-2x-large: 	calc(1.8125rem * var(--space-unit));
-	// --font-size-x-large: 	calc(1.5rem * var(--space-unit));
-	// --font-size-large: 		calc(1.1042rem * var(--space-unit));
-	// --font-size-medium: 	calc(1rem * var(--space-unit));
-	// --font-size-small:		calc(.8333rem * var(--space-unit));
-	// --font-size-x-small:	calc(.75rem * var(--space-unit));
-}
-
-
-
-/* Create the Global font and line-height CSS Variables */
-:root {
-    //--space-unit:.5;  //Base 8px (defined in _variables--spacing)
     --font-family-open-sans: 'Open Sans', Arial, Helvetica, sans-serif;
     --font-family-source-code-pro: 'Source Code Pro', monospace;
     --font-family-share-tech-mono: 'Share Tech Mono', monospace;
@@ -30,7 +12,7 @@
     --font-size-2x-large:   calc(3rem * var(--space-unit)); //H2 (Subhead 1) 24px
     --font-size-x-large:    calc(2.5rem * var(--space-unit)); //H3 (Subhead 2) 20px
     --font-size-large:      calc(2.5rem * var(--space-unit)); //H4 (Subhead 3) 20px
-    --font-size-medium:     calc(1.75rem * var(--space-unit)); //P  Body Text, Blockquote  14px
+    --font-size-medium:     calc(2rem * var(--space-unit)); //P  Body Text, Blockquote  14px
     --font-size-small:      calc(1.375rem * var(--space-unit)); //H5 Small, Caption. Endnote  11px
     --font-size-x-small:    calc(1.375rem * var(--space-unit)); //H6 Footnote 11px
 
@@ -41,26 +23,19 @@
     --line-height-medium:   calc(2.5rem * var(--space-unit)); //P 20px
     --line-height-small:    calc(2rem * var(--space-unit)); //H5 16px
     --line-height-x-small:  calc(2rem * var(--space-unit)); //H6 16px
-
-    --letter-spacing-small: calc(.05rem * var(--space-unit)); //
-    --letter-spacing-large: calc(.1rem * var(--space-unit)); //
-
-    
 }
 
-//// TODO Change all below based on Figma Guide - TG 11-10-21
-
-/* @ iPad landscape change to larger font sizes */
+/* @ iPad landscape change to larger font sizes 
+    --space-unit: 1; //Base 16 (defined in _variables--spacing)*/
 @media (min-width: 1024px) {
     :root {
-        //--space-unit: 1; //Base 16 (defined in _variables--spacing)
-        --font-size-3x-large:   calc(6rem * var(--space-unit)); //H1 48px
-        --font-size-2x-large:   calc(4rem * var(--space-unit)); //H2 (Subhead 1) 32px
-        --font-size-x-large:    calc(3rem * var(--space-unit)); //H3 (Subhead 2) 16px
-        --font-size-large:      calc(2.5rem * var(--space-unit)); //H4 (Subhead 3) 20px
-        --font-size-medium:     calc(2rem * var(--space-unit)); //P  Body Text, Blockquote  16px
-        --font-size-small:      calc(1.375rem * var(--space-unit)); //H5 Small, Caption. Endnote  11px
-        --font-size-x-small:    calc(1.375rem * var(--space-unit)); //H6 Footnote 11px
+        --font-size-3x-large:   calc(3rem * var(--space-unit)); //H1 48px
+        --font-size-2x-large:   calc(2rem * var(--space-unit)); //H2 (Subhead 1) 32px
+        --font-size-x-large:    calc(1.5rem * var(--space-unit)); //H3 (Subhead 2) 24px
+        --font-size-large:      calc(1.25rem * var(--space-unit)); //H4 (Subhead 3) 20px
+        --font-size-medium:     calc(1rem * var(--space-unit)); //P  Body Text, Blockquote  16px
+        --font-size-small:      calc(.688rem * var(--space-unit)); //H5 Small, Caption. Endnote  11px
+        --font-size-x-small:    calc(.688rem * var(--space-unit)); //H6 Footnote 11px
 
         --line-height-3x-large: calc(3.5rem * var(--space-unit)); //56px
         --line-height-2x-large: calc(3rem * var(--space-unit)); //48px

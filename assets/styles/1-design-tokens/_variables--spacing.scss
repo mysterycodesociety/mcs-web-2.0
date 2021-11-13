@@ -56,3 +56,83 @@ $spacing-map: (
     7x-large:	#{var(--space-7x-large)}, 	//80px;
     8x-large:	#{var(--space-8x-large)} 	//128px;
 );
+
+/* Default Spacing Options */
+:root {
+    --space-stack-default:  0 0 var(--space-medium) 0;		//8px	16px;
+	--space-stack-x-small:  0 0 var(--space-2x-small) 0;	//2px	4px;
+	--space-stack-small:  	0 0 var(--space-x-small) 0;		//4px	8px;
+	--space-stack-medium:  	0 0 var(--space-medium) 0;		//8px	16px;
+	--space-stack-large:  	0 0 var(--space-2x-large) 0;	//16px	32px;
+	--space-stack-x-large:  0 0 var(--space-6x-large) 0;	//32px	64px;
+	
+	--space-inline-default: 0 var(--space-medium) 0 0;
+	--space-inline-2x-small:0 var(--space-3x-small) 0 0;
+	--space-inline-x-small: 0 var(--space-2x-small) 0 0;
+	--space-inline-small:  	0 var(--space-x-small) 0 0;
+	--space-inline-medium: 	0 var(--space-medium) 0 0;
+	--space-inline-large:  	0 var(--space-2x-large) 0 0;
+	--space-inline-x-large:	0 var(--space-6x-large) 0 0;
+
+    --space-inset-small:   var(--space-x-small) var(--space-x-small) var(--space-x-small) var(--space-x-small); //8
+	--space-inset-medium:  var(--space-medium) var(--space-medium) var(--space-medium) var(--space-medium); //16
+	--space-inset-large:   var(--space-x-large) var(--space-x-large) var(--space-x-large) var(--space-x-large); //24
+    --space-inset-x-large: var(--space-2x-large) var(--space-2x-large) var(--space-2x-large) var(--space-2x-large); //32
+	
+	--space-inset-short-small:   var(--space-2x-small) var(--space-x-small) var(--space-2x-small) var(--space-x-small); //4 8 4 8
+	--space-inset-short-medium:  var(--space-x-small) var(--space-medium) var(--space-x-small) var(--space-medium); //8 16 8 16
+	--space-inset-short-large:   var(--space-medium) var(--space-x-large) var(--space-medium) var(--space-x-large); //16 24 16 24
+    --space-inset-short-x-large: var(--space-x-large) var(--space-2x-large) var(--space-x-large) var(--space-2x-large); //24 32 24 32
+	
+	--space-inset-tall-small:   var(--space-x-small) var(--space-2x-small) var(--space-x-small) var(--space-2x-small); //8 4 8 4
+	--space-inset-tall-medium: var(--space-medium) var(--space-x-small) var(--space-medium) var(--space-x-small); //16 8 16 8
+	--space-inset-tall-large:  var(--space-x-large) var(--space-medium) var(--space-x-large) var(--space-medium); //24 16 24 16
+    --space-inset-tall-x-large:  var(--space-2x-large) var(--space-x-large) var(--space-2x-large) var(--space-x-large); //32 24 32 24
+}
+
+$space-stack-map: (
+	space-stack-default:	#{var(--space-stack-default)},
+    space-stack-x-small:	#{var(--space-stack-x-small)},
+    space-stack-small:	    #{var(--space-stack-small)},
+    space-stack-medium:	    #{var(--space-stack-medium)},
+    space-stack-large:	    #{var(--space-stack-large)},
+    space-stack-x-large:	#{var(--space-stack-x-large)}
+);
+
+$space-inline-map: (
+	space-inline-default:	#{var(--space-inline-default)},
+    space-inline-x-small:	#{var(--space-inline-x-small)},
+    space-inline-small:	    #{var(--space-inline-small)},
+    space-inline-medium:	#{var(--space-inline-medium)},
+    space-inline-large:	    #{var(--space-inline-large)},
+    space-inline-x-large:	#{var(--space-inline-x-large)}
+);
+
+
+$space-inset-map: (
+	space-inset-default:	#{var(--space-inset-default)},
+    space-inset-x-small:	#{var(--space-inset-x-small)},
+    space-inset-small:	    #{var(--space-inset-small)},
+    space-inset-medium:	    #{var(--space-inset-medium)},
+    space-inset-large:	    #{var(--space-inset-large)},
+    space-inset-x-large:	#{var(--space-inset-x-large)}
+);
+
+
+$space-inset-short-map: (
+	space-inset-short-default:	#{var(--space-inset-short-default)},
+    space-inset-short-x-small:	#{var(--space-inset-short-x-small)},
+    space-inset-short-small:	#{var(--space-inset-short-small)},
+    space-inset-short-medium:	#{var(--space-inset-short-medium)},
+    space-inset-short-large:	#{var(--space-inset-short-large)},
+    space-inset-short-x-large:	#{var(--space-inset-short-x-large)}
+);
+
+$space-inset-tall-map: (
+	space-inset-tall-default:	#{var(--space-inset-tall-default)},
+    space-inset-tall-x-small:	#{var(--space-inset-tall-x-small)},
+    space-inset-tall-small:	    #{var(--space-inset-tall-small)},
+    space-inset-tall-medium:	#{var(--space-inset-tall-medium)},
+    space-inset-tall-large:	    #{var(--space-inset-tall-large)},
+    space-inset-tall-x-large:	#{var(--space-inset-tall-x-large)}
+);

@@ -5,6 +5,7 @@ h1 {
     font-family: var(--font-family-source-code-pro);
 	font-size: var(--font-size-3x-large);
 	line-height: var(--line-height-3x-large);
+	margin: var(--space-stack-large);
 }
 h2 {
     font-family: var(--font-family-source-code-pro);
@@ -15,6 +16,7 @@ h3 {
     font-family: var(--font-family-source-code-pro-italic);
 	font-size: var(--font-size-x-large);
 	line-height: var(--line-height-x-large);
+	text-transform: uppercase;
 }
 h4 {
     font-family: var(--font-family-share-tech-mono);
