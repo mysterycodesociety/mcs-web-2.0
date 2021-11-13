@@ -1,0 +1,122 @@
+/* Create the Global Font CSS Variables */
+:root {
+    --font-family-open-sans: 'Open Sans', sans-serif;
+    --font-family-source-code-pro: 'Source Code Pro', monospace;
+    --font-family-share-tech-mono: 'Share Tech Mono', monospace;
+    //--font-family-source-code-pro-italic: "Share Tech Mono", monospace;
+
+	
+	// --space-unit: 1;
+	// --font-size-4x-large: 	calc(4rem * var(--space-unit));
+	// --font-size-3x-large: 	calc(2.9792rem * var(--space-unit));
+	// --font-size-2x-large: 	calc(1.8125rem * var(--space-unit));
+	// --font-size-x-large: 	calc(1.5rem * var(--space-unit));
+	// --font-size-large: 		calc(1.1042rem * var(--space-unit));
+	// --font-size-medium: 	calc(1rem * var(--space-unit));
+	// --font-size-small:		calc(.8333rem * var(--space-unit));
+	// --font-size-x-small:	calc(.75rem * var(--space-unit));
+}
+
+
+
+/* Create the Global font and line-height CSS Variables */
+:root {
+    //--space-unit:.5;  //Base 8px (defined in _variables--spacing)
+    --font-family-open-sans: 'Open Sans', Arial, Helvetica, sans-serif;
+    --font-family-source-code-pro: 'Source Code Pro', monospace;
+    --font-family-share-tech-mono: 'Share Tech Mono', monospace;
+    --font-weight-regular:  400;
+    --font-weight-bold:     700;
+
+    --font-size-3x-large:   calc(6rem * var(--space-unit)); //H1 48px
+    --font-size-2x-large:   calc(4rem * var(--space-unit)); //H2 (Subhead 1) 32px
+    --font-size-x-large:    calc(3rem * var(--space-unit)); //H3 (Subhead 2) 16px
+    --font-size-large:      calc(2.5rem * var(--space-unit)); //H4 (Subhead 3) 20px
+    --font-size-medium:     calc(2rem * var(--space-unit)); //P  Body Text, Blockquote  16px
+    --font-size-small:      calc(1.375rem * var(--space-unit)); //H5 Small, Caption. Endnote  11px
+    --font-size-x-small:    calc(1.375rem * var(--space-unit)); //H6 Footnote 11px
+
+    --line-height-3x-large: calc(5rem * var(--space-unit)); //H1 40px
+    --line-height-2x-large: calc(4rem * var(--space-unit)); //H2 32px
+    --line-height-x-large:  calc(3rem * var(--space-unit)); //H3 24px
+    --line-height-large:    calc(2.5rem * var(--space-unit)); //H4 20px
+    --line-height-medium:   calc(2.5rem * var(--space-unit)); //P 20px
+    --line-height-small:    calc(2rem * var(--space-unit)); //H5 16px
+    --line-height-x-small:  calc(2rem * var(--space-unit)); //H6 16px
+
+    --letter-spacing-small: calc(.05rem * var(--space-unit)); //
+    --letter-spacing-large: calc(.1rem * var(--space-unit)); //
+
+    
+}
+
+//// TODO Change all below based on Figma Guide - TG 11-10-21
+
+/* @ iPad landscape change to larger font sizes */
+@media (min-width: 1024px) {
+    :root {
+        //--space-unit: 1; //Base 16 (defined in _variables--spacing)
+        --font-size-3x-large:   calc(2.5rem * var(--space-unit)); //H1 40px
+        --font-size-2x-large:   calc(2rem * var(--space-unit)); //H2 (Subhead 1) 32px
+        --font-size-x-large:    calc(1.5rem * var(--space-unit)); //H3 (Subhead 2) 24px
+        --font-size-large:      calc(1.25rem * var(--space-unit)); //H4 (Subhead 3) 20px
+        --font-size-medium:     calc(1rem * var(--space-unit)); //P  Body Text, Blockquote  16px
+        --font-size-small:      calc(.8125rem * var(--space-unit)); //H5 Small, Caption. Endnote  13px
+        --font-size-x-small:    calc(.6875rem * var(--space-unit)); //H6 Footnote 11px
+
+        --line-height-3x-large: calc(3.5rem * var(--space-unit)); //56px
+        --line-height-2x-large: calc(3rem * var(--space-unit)); //48px
+        --line-height-x-large:  calc(2.5rem * var(--space-unit)); //40px
+        --line-height-large:    calc(2rem * var(--space-unit)); //32px
+        --line-height-medium:   calc(1.5rem * var(--space-unit)); //24px
+        --line-height-small:    calc(1.25rem * var(--space-unit)); //20px
+        --line-height-x-small:  calc(1rem * var(--space-unit)); //16px
+    }
+}
+
+/* Create the Global Font SASS Variables */
+$font-family: 			#{var(--font-famiily)};
+$font-weight-regular:	#{var(--font-weight-regular)};
+$font-weight-bold:		#{var(--font-weight-bold)};
+
+$font-size-3x-large: 	#{var(--font-size-3x-large)};
+$font-size-2x-large: 	#{var(--font-size-2x-large)};
+$font-size-x-large: 	#{var(--font-size-x-large)};
+$font-size-large: 		#{var(--font-size-large)};
+$font-size-medium: 		#{var(--font-size-medium)};
+$font-size-small:		#{var(--font-size-small)};
+$font-size-x-small:		#{var(--font-size-x-small)};
+
+$line-height-3x-large:	#{var(--line-height-3x-large)};
+$line-height-2x-large:	#{var(--line-height-2x-large)};
+$line-height-x-large:	#{var(--line-height-x-large)};
+$line-height-large:		#{var(--line-height-large)};
+$line-height-medium:	#{var(--line-height-medium)};
+$line-height-small:		#{var(--line-height-small)};
+$line-height-x-small:	#{var(--line-height-x-small)};
+
+
+
+
+
+/* Create the Global Font Size SASS Variable Map */
+$font-size-map: (
+	3x-large: 	#{var(--font-size-3x-large)},
+	2x-large: 	#{var(--font-size-2x-large)},
+	x-large: 	#{var(--font-size-x-large)},
+	large: 		#{var(--font-size-large)},
+	medium: 	#{var(--font-size-medium)},
+	small:		#{var(--font-size-small)},
+	x-small:	#{var(--font-size-x-small)}
+);
+
+/* Create the Global Line Height SASS Variable Map */
+$line-height-map: (
+	3x-large:	#{var(--line-height-3x-large)},
+	2x-large:	#{var(--line-height-2x-large)},
+	x-large:	#{var(--line-height-x-large)},
+	large:		#{var(--line-height-large)},
+	medium:		#{var(--line-height-medium)},
+	small:		#{var(--line-height-small)},
+	x-small:	#{var(--line-height-x-small)}
+);	

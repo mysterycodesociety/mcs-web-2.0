@@ -1,0 +1,22 @@
+/* Base Styles */
+html { font-family: var(--font-family-open-sans); }
+
+h1 {
+    font-family: var(--font-family-source-code-pro);
+	font-size: var(--font-size-3x-large);
+}
+h2 {
+    font-family: var(--font-family-source-code-pro);
+	font-size: var(--font-size-2x-large);
+}
+h3 {
+    font-family: var(--font-family-source-code-pro-italic);
+	font-size: var(--font-size-x-large);
+}
+h4 {
+    font-family: var(--font-family-share-tech-mono);
+	font-size: var(--font-size-large);
+}
+p {
+	font-size: var(--font-size-medium);
+}
