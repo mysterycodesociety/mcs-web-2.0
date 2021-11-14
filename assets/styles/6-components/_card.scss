@@ -1,0 +1,25 @@
+/* Card One */
+.card {
+    max-width: 300px;
+    margin: var(--space-stack-medium);
+
+    .card__icon {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto;
+        background-color: $main-green;
+    }
+
+    .card__copy {
+        padding: var(--space-inset-large);
+
+        .card__title {
+            margin: var(--space-stack-medium);
+            text-align: center;
+        }
+
+        .card__description {
+            margin: var(--space-stack-small);
+        }
+    }
+}
