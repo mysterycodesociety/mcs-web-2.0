@@ -30,10 +30,12 @@ Global Styles for Mystery Code Society Website - 11-2021
 /* [ 5-layout ] */
 @import "5-layout/design-system-layout";
 @import "5-layout/flex-box";
+@import "5-layout/width";
 
 /* [6-components ] */
 @import "6-components/card";
 @import "6-components/design_guide";
+@import "6-components/nav";
 
 /* [ 7-utilities ] */
 @import "7-utilities/u-color";

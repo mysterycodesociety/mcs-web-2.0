@@ -1,0 +1,17 @@
+nav {
+  border: 1px solid red;
+  font-family: var(--font-family-share-tech-mono);
+
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  img {
+    height: 50px;
+  }
+
+  ul {
+    list-style: none;
+  }
+}

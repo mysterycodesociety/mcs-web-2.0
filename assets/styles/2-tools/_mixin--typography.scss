@@ -5,7 +5,7 @@
     @each $name, $value in $font-size-map {
         &#{$prefix}#{$name} {
             #{$attribute}: $value;
-        } 
+        }
     }
 }
 
