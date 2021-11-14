@@ -98,5 +98,6 @@ $color-opacity-map: (
     main-green-dark:    $main-green-dark,
 );
 
-
+/* Create gradient maps */
 $gradient-blue-green: linear-gradient(163.79deg, #0288D1 -4.3%, #009688 72.08%);
+$purple-gradient: linear-gradient(162.5deg, #AC1F86 -5.4%, $main-purple 39.92%, #563FB1 122.56%);

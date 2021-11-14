@@ -19,9 +19,11 @@
     --space-8x-large:		calc(8rem * var(--space-unit)); 	//128px;
 }
 
+$ipad-landscape: 1024px;
+
 /* Create the Global Spacing CSS Variables */
 // Base = 16px  (Spacing for ipad landscape and up)
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
     :root{
         --space-unit: 1;
     }

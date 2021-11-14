@@ -9,7 +9,22 @@ eleventyNavigation:
 ---
 
 <section id="hero">
-  Hero
+  <div class="hero-main">
+    <div class="container">
+      <div class="flex flex-row justify-content-space-around">
+        <div id="mission">
+          <h1>Our Mission</h1>
+          <h4>
+            Mystery Code Society offers free, beginner to intermediate coding education to people of marginalized genders. Educational offerings include classes, workshops, meetups, and other educational events. Our focus is on students in 5th-12th grades but may include programs for people of marginalized genders of all ages.
+          </h4>
+        </div>
+        <div id="upcoming">
+          <h4>Upcoming & Current Courses</h4>
+            {% include components/class.liquid %}
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="intros">
