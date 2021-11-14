@@ -1,7 +1,7 @@
 /* Create the Global Spacing CSS Variables */
 // Base = 8px (Spacing for mobile)
 :root{
-    --space-unit: 0.5;
+    --space-unit: 1.0;
     --space-0: 				calc(0rem * var(--space-unit));	//0px
     --space-3x-small: 		calc(0.125rem * var(--space-unit));//2px
     --space-2x-small:		calc(0.25rem * var(--space-unit)); //4px;
