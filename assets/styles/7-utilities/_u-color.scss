@@ -9,6 +9,10 @@
 	@include background-color();
 }
 
+.u-background-gradient-blue-green {
+	background: $gradient-blue-green;
+}
+
 .u-text-color{
 	@include color();
 }

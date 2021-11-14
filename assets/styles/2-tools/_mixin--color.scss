@@ -4,7 +4,7 @@
     @each $name,
     $value in $color-map {
         &#{$prefix}#{"" + $name} {
-            #{$attribute}: rgba($value, $opacity);;
+            #{$attribute}: rgba($value, $opacity);
         }
     }
 }
