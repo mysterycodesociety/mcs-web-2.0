@@ -11,3 +11,22 @@
 .justify-content-space-around {
     justify-content: space-around;
 }
+.justify-content-center {
+    justify-content: space-around;
+}
+
+
+@media (min-width: 1024px) {
+    .lg-flex-row {
+        flex-direction: row;
+    }
+    .lg-flex-column {
+        flex-direction: column;
+    }
+    .lg-justify-content-space-around {
+        justify-content: space-around;
+    }
+    .lg-justify-content-center {
+        justify-content: space-around;
+    }
+}
