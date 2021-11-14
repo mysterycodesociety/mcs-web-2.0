@@ -1,0 +1,78 @@
+//Buttons
+%button {
+    width: 150px;
+    padding: var(--space-inset-medium);
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: $font-weight-bold;
+    color: var(--color-white);
+    line-height: var(--line-height-x-small);
+
+    border: none;
+    border-radius: var(--space-3x-large);
+    word-break: normal;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+//Primary Button (gradient)
+.button {
+    @extend %button;
+    @include button-gradient('pink', 'purple');
+
+    &.button--yellow {
+        @include button-gradient('yellow', 'pink');
+    }
+
+    &.button--green {
+        @include button-radial-gradient('green', 'blue');
+    }
+}
+
+//Secondary Button - (solid)
+.button-secondary {
+    @extend %button;
+    @include button-solid('purple');
+
+    &.button--blue {
+        @include button-solid('blue');
+    }
+
+    &.button--green {
+        @include button-solid('green');
+    }
+
+    &.button--pink {
+        @include button-solid('pink');
+    }
+}
+
+// Tertiary Button - (white bg)
+.button-light {
+    @extend %button;
+    @include button-light('purple');
+
+
+    &.button--blue {
+        @include button-light('blue');
+    }
+
+    &.button--green {
+        @include button-light('green');
+    }
+
+    &.button--pink {
+        @include button-light('pink');
+    }
+}
+
+//Width Variations
+.button--small {
+    padding: var(--space-inset-small);
+}
+
+.button--large {
+    padding: var(--space-inset-large);
+}
