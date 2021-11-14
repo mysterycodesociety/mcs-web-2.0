@@ -22,11 +22,11 @@
     @extend %button;
     @include button-gradient('pink', 'purple');
 
-    &.button-yellow {
+    &.button--yellow {
         @include button-gradient('yellow', 'pink');
     }
 
-    &.button-green {
+    &.button--green {
         @include button-radial-gradient('green', 'blue');
     }
 }
@@ -36,15 +36,15 @@
     @extend %button;
     @include button-solid('purple');
 
-    &.button-blue {
+    &.button--blue {
         @include button-solid('blue');
     }
 
-    &.button-green {
+    &.button--green {
         @include button-solid('green');
     }
 
-    &.button-pink {
+    &.button--pink {
         @include button-solid('pink');
     }
 }
@@ -55,15 +55,15 @@
     @include button-light('purple');
 
 
-    &.button-blue {
+    &.button--blue {
         @include button-light('blue');
     }
 
-    &.button-green {
+    &.button--green {
         @include button-light('green');
     }
 
-    &.button-pink {
+    &.button--pink {
         @include button-light('pink');
     }
 }
