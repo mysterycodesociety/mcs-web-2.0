@@ -23,6 +23,12 @@
         }
     }
 
+    .card__button {
+        button {
+            width: 100%;
+        }
+    }
+
     &.card-border-button {
         width: 360px;
         height: 100%;
