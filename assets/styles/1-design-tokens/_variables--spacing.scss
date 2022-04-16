@@ -45,6 +45,7 @@ $space-3x-large: #{var(--space-3x-large)};
 /* Create the Global Spacing SASS Variable Map 
     Used to generate the utility classes */
 $spacing-map: (
+    0:          #{var(--space-0)},          //0px
     3x-small:	#{var(--space-3x-small)},	//2px
     2x-small:	#{var(--space-2x-small)}, 	//4px;
     x-small:	#{var(--space-x-small)},	//8px;

@@ -15,7 +15,7 @@
 .u-p { @include spacing-utilities(padding); }
 
 
-/* Preset Spacing 
+/* Preset Spacing
     Stacked = Margin Bottom
     Inline = Margin Right
     Inset = Padding Equal
@@ -33,4 +33,6 @@
     .u-lg { @include space-inset(); }
     .u-lg { @include space-inset-short(); }
     .u-lg { @include space-inset-tall(); }
+    .u-lg-m { @include spacing-utilities(); }
+    .u-lg-p { @include spacing-utilities(padding); }
 }
