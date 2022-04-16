@@ -68,6 +68,13 @@
     }
 }
 
+.button-white { 
+    @extend %button;
+    background: var(--white);
+    color: $main-green;
+    width: auto;
+}
+
 //Width Variations
 .button--small {
     padding: var(--space-inset-small);
