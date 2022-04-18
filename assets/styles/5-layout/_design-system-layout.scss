@@ -28,8 +28,12 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	
 }
+.container {
+	// TODO: Add proper max-width;
+	max-width: 1600px;
+}
+
 .containerbox {
 	width: 80%;
 	margin: 48px auto;

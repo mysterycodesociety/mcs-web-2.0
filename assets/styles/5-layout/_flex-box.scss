@@ -12,14 +12,19 @@
     justify-content: space-around;
 }
 .justify-content-center {
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.justify-left {
+    justify-content: start;
+    align-items: flex-start;
+    align-self: start;
 }
 .align-items-center {
     align-items: center;
 }
 
-
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
     .lg-flex-row {
         flex-direction: row;
     }

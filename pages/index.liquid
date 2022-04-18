@@ -9,11 +9,26 @@ eleventyNavigation:
 ---
 
 <section id="hero">
-  Hero
+  <div class="hero-main u-lg-p-large u-p-6x-large">
+    <div class="container u-py-3x-large">
+      <div class="flex flex-column lg-flex-row justify-content-space-around">
+        <div id="mission" class="u-lg-pr-4x-large u-lg-pt-6x-large u-pb-3x-large">
+          <h1 class="u-pb-medium">Our Mission</h1>
+          <h3>
+            Mystery Code Society offers free, beginner to intermediate coding education to people of marginalized genders. Educational offerings include classes, workshops, meetups, and other educational events. Our focus is on students in 5th-12th grades but may include programs for people of marginalized genders of all ages.
+          </h3>
+        </div>
+        <div id="upcoming" class="flex flex-column justify-content-center u-pt-6x-large u-lg-pt-0">
+          <h4 class="justify-left u-pb-6x-large u-lg-pb-large">Upcoming & Current Courses</h4>
+            {% include components/class.liquid %}
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="intros">
-  <div class="flex flex-row justify-content-space-around">
+  <div class="flex flex-column lg-flex-row justify-content-space-around">
     <div class="card">
       <div class="card__icon">
         <div class="image-container">

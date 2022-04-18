@@ -1,0 +1,30 @@
+.hero-main {
+  min-height: 450px;
+  color: var(--color-white);
+  background: $purple-gradient;
+}
+
+#mission {
+  max-width: 580px;
+
+  // At regular width, style the h3 like an h4 (per design)
+  h3 {
+    font-family: var(--font-family-share-tech-mono);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-large);
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+  }
+}
+
+@media (max-width: $ipad-landscape) {
+  #mission {
+    h1 {
+      font-family: var(--font-family-open-sans);
+    }
+
+    h3 {
+      line-height: var(--line-height-x-large);
+    }
+  }
+}

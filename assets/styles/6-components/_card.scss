@@ -1,7 +1,9 @@
 /* Card One */
 .card {
-    max-width: 300px;
+    max-width: 360px;
     margin: var(--space-stack-medium);
+    background-color: var(--color-white);
+    color: var(--color-gray-dark-60);
 
     .card__icon {
         width: 65px;
@@ -10,15 +12,22 @@
     }
 
     .card__copy {
-        padding: var(--space-inset-large);
+        padding: var(--space-inset-x-large);
+
+        @media (min-width: $ipad-landscape) {
+            padding: var(--space-inset-large);
+        }
 
         .card__title {
             margin: var(--space-stack-medium);
-            text-align: center;
         }
 
         .card__description {
-            margin: var(--space-stack-small);
+            margin: var(--space-stack-medium);
+
+            @media (min-width: $ipad-landscape) {
+                margin: var(--space-stack-small);
+            }
         }
     }
 
@@ -29,15 +38,18 @@
     }
 
     &.card-border-button {
-        width: 360px;
-        height: 100%;
+        max-width: 360px;
+        width: 100%;
 
-        border-radius: var(--space-x-small);
+        border-radius: var(--space-small);
         box-shadow:  0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 7px 8px rgba(0, 0, 0, 0.2);
 
         .card__copy {
-            padding: var(--space-2x-large) var(--space-x-large);
+            padding: var(--space-6x-large) var(--space-4x-large);
 
+            @media (min-width: $ipad-landscape) {
+                padding: var(--space-2x-large) var(--space-x-large);
+            }
         }
 
         .card__title {
@@ -46,20 +58,35 @@
         .card__headline {
             color: $main-purple;
             text-transform: uppercase;
+            margin: var(--space-stack-medium);
         }
 
         .card__subheadline {
             font-style: italic;
             text-align: left;
+            margin: var(--space-stack-medium);
+            text-transform: none;
         }
 
         .card__description {
-            margin: var(--space-stack-medium);
+            margin: var(--space-stack-large);
+
+            p {
+                line-height: var(--line-height-large);
+            }
+
+            @media (min-width: $ipad-landscape) {
+                margin: var(--space-stack-medium);
+            }
         }
 
         .card__button {
             display: flex;
             justify-content: center;
+        }
+
+        button {
+            max-width: 300px;
         }
     }
 

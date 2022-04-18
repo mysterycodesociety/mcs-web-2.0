@@ -5,29 +5,33 @@
     --font-family-open-sans: 'Open Sans', Arial, Helvetica, sans-serif;
     --font-family-source-code-pro: 'Source Code Pro', monospace;
     --font-family-share-tech-mono: 'Share Tech Mono', monospace;
+    --font-family-source-code-pro-italic: 'Source Code Pro', monospace;
     --font-weight-regular:  400;
     --font-weight-bold:     700;
+    --font-weight-italic:   600;
+    --font-weight-very-bold: 900;
 
     --font-size-3x-large:   calc(4rem * var(--space-unit)); //H1 32px
     --font-size-2x-large:   calc(3rem * var(--space-unit)); //H2 (Subhead 1) 24px
     --font-size-x-large:    calc(2.5rem * var(--space-unit)); //H3 (Subhead 2) 20px
-    --font-size-large:      calc(2.5rem * var(--space-unit)); //H4 (Subhead 3) 20px
-    --font-size-medium:     calc(2rem * var(--space-unit)); //P  Body Text, Blockquote  14px
+    --font-size-large:      calc(2.0rem * var(--space-unit)); //H4 (Subhead 3) 16px
+    --font-size-medium:     calc(1.75rem * var(--space-unit)); //P  Body Text, Blockquote  14px
     --font-size-small:      calc(1.375rem * var(--space-unit)); //H5 Small, Caption. Endnote  11px
     --font-size-x-small:    calc(1.375rem * var(--space-unit)); //H6 Footnote 11px
 
-    --line-height-3x-large: calc(5rem * var(--space-unit)); //H1 40px
+    --line-height-4x-large: calc(6rem * var(--space-unit)); //H1 40px
+    --line-height-3x-large: calc(5rem * var(--space-unit));
     --line-height-2x-large: calc(4rem * var(--space-unit)); //H2 32px
     --line-height-x-large:  calc(3rem * var(--space-unit)); //H3 24px
     --line-height-large:    calc(2.5rem * var(--space-unit)); //H4 20px
-    --line-height-medium:   calc(2.5rem * var(--space-unit)); //P 20px
+    --line-height-medium:   calc(2rem * var(--space-unit)); //P 20px
     --line-height-small:    calc(2rem * var(--space-unit)); //H5 16px
     --line-height-x-small:  calc(2rem * var(--space-unit)); //H6 16px
 }
 
 /* @ iPad landscape change to larger font sizes 
     --space-unit: 1; //Base 16 (defined in _variables--spacing)*/
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
     :root {
         --font-size-3x-large:   calc(3rem * var(--space-unit)); //H1 48px
         --font-size-2x-large:   calc(2rem * var(--space-unit)); //H2 (Subhead 1) 32px
@@ -38,11 +42,11 @@
         --font-size-x-small:    calc(.688rem * var(--space-unit)); //H6 Footnote 11px
 
         --line-height-3x-large: calc(3.5rem * var(--space-unit)); //56px
-        --line-height-2x-large: calc(3rem * var(--space-unit)); //48px
-        --line-height-x-large:  calc(2.5rem * var(--space-unit)); //40px
-        --line-height-large:    calc(2rem * var(--space-unit)); //32px
-        --line-height-medium:   calc(1.5rem * var(--space-unit)); //24px
-        --line-height-small:    calc(1.25rem * var(--space-unit)); //20px
+        --line-height-2x-large: calc(2.5rem * var(--space-unit)); //48px
+        --line-height-x-large:  calc(2rem * var(--space-unit)); //40px
+        --line-height-large:    calc(1.5rem * var(--space-unit)); //32px
+        --line-height-medium:   calc(1.25rem * var(--space-unit)); //24px
+        --line-height-small:    calc(1rem * var(--space-unit)); //20px
         --line-height-x-small:  calc(1rem * var(--space-unit)); //16px
     }
 }
@@ -88,4 +92,4 @@ $line-height-map: (
 	medium:		#{var(--line-height-medium)},
 	small:		#{var(--line-height-small)},
 	x-small:	#{var(--line-height-x-small)}
-);	
+);

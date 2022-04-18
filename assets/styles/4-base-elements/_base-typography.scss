@@ -5,27 +5,33 @@ h1 {
     font-family: var(--font-family-source-code-pro);
 	font-size: var(--font-size-3x-large);
 	line-height: var(--line-height-3x-large);
+	font-weight: var(--font-weight-very-bold);
 	margin: var(--space-stack-large);
 }
 h2 {
     font-family: var(--font-family-source-code-pro);
 	font-size: var(--font-size-2x-large);
 	line-height: var(--line-height-2x-large);
+	font-weight: var(--font-weight-very-bold);
 }
 h3 {
     font-family: var(--font-family-source-code-pro-italic);
 	font-size: var(--font-size-x-large);
 	line-height: var(--line-height-x-large);
-	text-transform: uppercase;
+	font-weight: var(--font-weight-italic);
+	font-style: italic;
 }
 h4 {
     font-family: var(--font-family-share-tech-mono);
 	font-size: var(--font-size-large);
-	line-height: var(--line-height-large);
+	line-height: var(--line-height-x-large);
+	font-weight: var(--font-weight-regular);
+	text-transform: uppercase;
 }
 p {
 	font-size: var(--font-size-medium);
 	line-height: var(--line-height-medium);
+	font-weight: var(--font-weight-regular);
 }
 
 h5 {

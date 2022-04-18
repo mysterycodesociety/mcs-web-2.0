@@ -15,7 +15,7 @@
 .u-p { @include spacing-utilities(padding); }
 
 
-/* Preset Spacing 
+/* Preset Spacing
     Stacked = Margin Bottom
     Inline = Margin Right
     Inset = Padding Equal
@@ -27,10 +27,12 @@
 .u { @include space-inset(); }
 .u { @include space-inset-short(); }
 .u { @include space-inset-tall(); }
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
     .u-lg { @include space-stack(); }
     .u-lg { @include space-inline(); }
     .u-lg { @include space-inset(); }
     .u-lg { @include space-inset-short(); }
     .u-lg { @include space-inset-tall(); }
+    .u-lg-m { @include spacing-utilities(); }
+    .u-lg-p { @include spacing-utilities(padding); }
 }

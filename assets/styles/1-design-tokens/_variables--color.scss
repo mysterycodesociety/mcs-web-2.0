@@ -1,7 +1,7 @@
 /* Create the CSS Variables for White, Black, and Grays */
 :root {
     --white:         rgb(255,255,255);//#ffffff    // black ratio 17.92    // white ratio ----
-    --color-white:         255,255,255;
+    --color-white:         rgb(255,255,255);
     --color-gray-light-80: rgb(230,230,230);//#e6e6e6    // black ratio 14.36    // white ratio 1.24
     --color-gray-light-60: rgb(204,204,204);//#cccccc    // black ratio 11.16    // white ratio 1.6
     --color-gray-light-40: rgb(179,179,179);//#b3b3b3    // black ratio 8.55     // white ratio 2.09
@@ -98,5 +98,6 @@ $color-opacity-map: (
     main-green-dark:    $main-green-dark,
 );
 
-
+/* Create gradient maps */
 $gradient-blue-green: linear-gradient(163.79deg, #0288D1 -4.3%, #009688 72.08%);
+$purple-gradient: linear-gradient(162.5deg, #AC1F86 -5.4%, $main-purple 39.92%, #563FB1 122.56%);
