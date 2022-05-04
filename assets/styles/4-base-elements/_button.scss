@@ -18,6 +18,14 @@
     transition: all 0.5s ease;
 }
 
+a {
+    &.button {
+        @extend %button;
+        color: inherit;
+        display: inline-block;
+    }
+}
+
 //Primary Button (gradient)
 .button {
     @extend %button;
@@ -69,7 +77,6 @@
     }
 }
 
-// Tertiary Button - (white bg)
 .button-white {
     @extend %button;
     @include button-white('purple');
