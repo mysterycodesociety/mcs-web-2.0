@@ -1,6 +1,5 @@
 /* Card One */
 .card {
-    max-width: 360px;
     margin: var(--space-stack-medium);
     background-color: var(--color-white);
     color: var(--color-gray-dark-60);
@@ -38,11 +37,14 @@
     }
 
     &.card-border-button {
-        max-width: 360px;
         width: 100%;
 
         border-radius: var(--space-small);
         box-shadow:  0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 7px 8px rgba(0, 0, 0, 0.2);
+
+        &.constrained {
+            max-width: 360px;
+        }
 
         .card__copy {
             padding: var(--space-6x-large) var(--space-4x-large);
@@ -91,20 +93,17 @@
     }
 
     &.card-full-image {
-        width: 300px;
-        height: 165px;
         position: relative;
-
-        .image-container {
-
-        }
+        min-height: 200px;
+        height: 100%;
+        overflow: hidden;
 
         .card__copy {
             position: absolute;
             top: 0;
             left: 0;
-            width: 300px;
-            height: 165px;
+            width: 100%;
+            height: 100%;
             display: none;
         }
 

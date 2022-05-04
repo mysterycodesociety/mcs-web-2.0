@@ -1,0 +1,19 @@
+<div class="show-case-container flex flex-column lg-flex-row">
+    {% for project in projects %}
+      <div class="showcase-card-container u-p-small" style="flex-basis:25%;">
+        <div class="card card-full-image">
+          <div class="image-container">
+            <img src="{{ project.image }}" />
+          </div>
+          <div class="card__copy">
+            <a href="{{ project.link }}" alt="screenshot of {{ project.title }}" target="_blank">
+              <div class="card__title">
+                <h4 class="card__headline">{{ project.studentName }} - {{ project.className }}</h4>
+                <h4 class="card__subheadline">{{ project.title }}</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+</div>
