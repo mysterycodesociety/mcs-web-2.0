@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
 }
 
 /* header */
@@ -137,6 +136,7 @@ body {
   }
   .header .nav {
     display: flex;
+    justify-content: flex-end;
   }
   .header li {
     float: left;
