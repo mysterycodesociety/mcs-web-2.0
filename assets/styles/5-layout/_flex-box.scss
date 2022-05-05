@@ -16,6 +16,12 @@
     justify-content: center;
     align-items: center;
 }
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.justify-content-end {
+    justify-content: end;
+}
 .justify-left {
     justify-content: start;
     align-items: flex-start;
@@ -23,6 +29,9 @@
 }
 .align-items-center {
     align-items: center;
+}
+.align-items-start {
+    align-items: start;
 }
 
 @media (min-width: $ipad-landscape) {
@@ -38,7 +47,18 @@
     .lg-justify-content-center {
         justify-content: space-around;
     }
+
+    .lg-justify-content-space-between {
+        justify-content: space-between;
+    }
+    .lg-justify-content-end {
+        justify-content: end;
+    }
     .lg-align-items-center {
         align-items: center;
     }
+    .lg-align-items-start {
+        align-items: start;
+    }
+
 }

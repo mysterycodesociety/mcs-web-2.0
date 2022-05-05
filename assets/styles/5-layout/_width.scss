@@ -26,7 +26,7 @@
     width: 25%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
     .lg-width-100 {
         width: 100%;
     }
