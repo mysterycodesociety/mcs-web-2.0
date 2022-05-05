@@ -1,0 +1,161 @@
+[
+  {
+    "name": "Hauwa Muibi",
+    "pic": "/assets/images/volunteers/hauwa.jpg",
+    "group": "Board",
+    "board": true,
+    "title": "President",
+    "roles": [
+      "ta",
+      "speaker",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Autumn Rodeheaver",
+    "pic": "/assets/images/volunteers/autumn.jpg",
+    "group": "Board",
+    "title": "Secretary",
+    "roles": [
+      "organizer"
+    ]
+  },
+  {
+    "name": "Grace Erixon",
+    "pic": "/assets/images/volunteers/grace.jpg",
+    "group": "Board",
+    "title": "Treasurer",
+    "roles": [
+      "instructor",
+      "ta",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Mary Donovan Martello",
+    "pic": "/assets/images/volunteers/marydonovanmartello.jpg",
+    "group": "Board",
+    "title": "Board Member",
+    "roles": [
+      "ta",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Lingli Gan",
+    "pic": "/assets/images/volunteers/lingli.jpg",
+    "group": "Board",
+    "title": "Board Member",
+    "roles": [
+      "instructor",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Morgan Haworth",
+    "pic": "/assets/images/volunteers/MorganHaworth.jpg",
+    "group": "Board",
+    "title": "Board Member",
+    "roles": [
+      "instructor",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Wendy Holley",
+    "pic": "/assets/images/volunteers/wendy-pic.jpg",
+    "group": "Board",
+    "title": "Board Member",
+    "roles": [
+      "instructor",
+      "ta",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Tera Maher",
+    "pic": "/assets/images/volunteers/tera.jpg",
+    "group": "Board",
+    "title": "Board Member",
+    "roles": [
+      "instructor",
+      "speaker",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Tia J.",
+    "pic": "/assets/images/volunteers/tawanna.jpg",
+    "group": "Advisory",
+    "title": "",
+    "roles": [
+      "ta",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Lauren Schultz",
+    "group": "Advisory",
+    "pic": "/assets/images/volunteers/laurens.png",
+    "title": "",
+    "roles": [
+      "organizer"
+    ]
+  },
+  {
+    "name": "Alexandra Millatmal",
+    "group": "Advisory",
+    "pic": "/assets/images/volunteers/alexandram.jpg",
+    "title": "",
+    "roles": [
+
+    ]
+  },
+  {
+    "name": "Amanda Martinez",
+    "pic": "/assets/images/volunteers/amanda.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "instructor",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Ciprianna Engel",
+    "pic": "/assets/images/volunteers/ciprianna.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "instructor"
+    ]
+  },
+  {
+    "name": "Lauren Roberts",
+    "pic": "/assets/images/volunteers/laurenr.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "ta"
+    ]
+  },
+  {
+    "name": "Andrew Yolland",
+    "pic": "/assets/images/volunteers/andrew.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "ta",
+      "organizer"
+    ]
+  },
+  {
+    "name": "Brenda Agüero Carranza",
+    "pic": "/assets/images/volunteers/brenda.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "organizer"
+    ]
+  }
+]

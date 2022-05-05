@@ -13,6 +13,10 @@
 	background: $gradient-blue-green;
 }
 
+.u-background-gradient-orange-pink {
+	background: $gradient-orange-pink;
+}
+
 .u-text-color{
 	@include color();
 }
