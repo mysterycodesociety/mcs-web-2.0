@@ -17,7 +17,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
-  
+
   ul {
     margin: 0;
     padding: 0;
@@ -46,6 +46,7 @@ a {
 
     img {
       width: 58px;
+      height: 58px;
     }
   }
 
@@ -155,7 +156,7 @@ a {
     max-height: none;
     display: flex;
     align-items: center;
-    padding-right: 20px; 
+    padding-right: 20px;
   }
   .header .menu-icon {
     display: none;
