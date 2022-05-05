@@ -1,6 +1,5 @@
 //Buttons
-%button, a {
-    display: inline-block;
+%button, .button {
     width: 150px;
     padding: var(--space-inset-large);
 
@@ -20,8 +19,6 @@
 
 a {
     &.button {
-        @extend %button;
-        color: inherit;
         display: inline-block;
     }
 }

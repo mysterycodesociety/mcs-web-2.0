@@ -4,6 +4,10 @@
     background-color: var(--color-white);
     color: var(--color-gray-dark-60);
 
+    &.constrained {
+        max-width: 360px;
+    }
+
     .card__icon {
         width: 65px;
         height: 65px;
@@ -27,12 +31,6 @@
             @media (min-width: $ipad-landscape) {
                 margin: var(--space-stack-small);
             }
-        }
-    }
-
-    .card__button {
-        button {
-            width: 100%;
         }
     }
 
