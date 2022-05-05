@@ -4,7 +4,7 @@
     @each $name,
     $value in $color-map {
         &#{$prefix}#{"" + $name} {
-            #{$attribute}: rgba($value, $opacity);
+            #{$attribute}: $value;
         }
     }
 }
@@ -68,6 +68,15 @@
 @mixin button-light($color: 'purple') {
     color: map-get($color-map, 'main-' + $color);
     background: transparent;
+
+    &:hover {
+        background: map-get($color-map, 'secondary-' + $color + '-light');
+    }
+}
+
+@mixin button-white($color: 'purple') {
+    color: map-get($color-map, 'main-' + $color);
+    background: var(--color-white);
 
     &:hover {
         background: map-get($color-map, 'secondary-' + $color + '-light');

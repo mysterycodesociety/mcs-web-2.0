@@ -30,7 +30,6 @@
 	justify-content: flex-start;
 }
 .container {
-	// TODO: Add proper max-width;
 	max-width: 1600px;
 }
 
@@ -79,4 +78,18 @@
 
 .box-sizing-reset {
 	box-sizing: content-box !important;
+}
+
+.sm-display-none {
+    display: none !important;
+}
+
+@media (min-width: $ipad-landscape) {
+    .lg-display-none {
+        display: none !important;
+    }
+
+    .sm-display-none {
+    	display: unset !important;
+    }
 }
