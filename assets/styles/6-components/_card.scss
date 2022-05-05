@@ -1,7 +1,12 @@
 /* Card One */
 .card {
-    max-width: 300px;
     margin: var(--space-stack-medium);
+    background-color: var(--color-white);
+    color: var(--color-gray-dark-60);
+
+    &.constrained {
+        max-width: 360px;
+    }
 
     .card__icon {
         width: 65px;
@@ -10,34 +15,41 @@
     }
 
     .card__copy {
-        padding: var(--space-inset-large);
+        padding: var(--space-inset-x-large);
+
+        @media (min-width: $ipad-landscape) {
+            padding: var(--space-inset-large);
+        }
 
         .card__title {
             margin: var(--space-stack-medium);
-            text-align: center;
         }
 
         .card__description {
-            margin: var(--space-stack-small);
-        }
-    }
+            margin: var(--space-stack-medium);
 
-    .card__button {
-        button {
-            width: 100%;
+            @media (min-width: $ipad-landscape) {
+                margin: var(--space-stack-small);
+            }
         }
     }
 
     &.card-border-button {
-        width: 360px;
-        height: 100%;
+        width: 100%;
 
-        border-radius: var(--space-x-small);
+        border-radius: var(--space-small);
         box-shadow:  0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 7px 8px rgba(0, 0, 0, 0.2);
 
-        .card__copy {
-            padding: var(--space-2x-large) var(--space-x-large);
+        &.constrained {
+            max-width: 360px;
+        }
 
+        .card__copy {
+            padding: var(--space-6x-large) var(--space-4x-large);
+
+            @media (min-width: $ipad-landscape) {
+                padding: var(--space-2x-large) var(--space-x-large);
+            }
         }
 
         .card__title {
@@ -46,38 +58,50 @@
         .card__headline {
             color: $main-purple;
             text-transform: uppercase;
+            margin: var(--space-stack-medium);
         }
 
         .card__subheadline {
             font-style: italic;
             text-align: left;
+            margin: var(--space-stack-medium);
+            text-transform: none;
         }
 
         .card__description {
-            margin: var(--space-stack-medium);
+            margin: var(--space-stack-large);
+
+            p {
+                line-height: var(--line-height-large);
+            }
+
+            @media (min-width: $ipad-landscape) {
+                margin: var(--space-stack-medium);
+            }
         }
 
         .card__button {
             display: flex;
             justify-content: center;
         }
+
+        button {
+            max-width: 300px;
+        }
     }
 
     &.card-full-image {
-        width: 300px;
-        height: 165px;
         position: relative;
-
-        .image-container {
-
-        }
+        min-height: 200px;
+        height: 100%;
+        overflow: hidden;
 
         .card__copy {
             position: absolute;
             top: 0;
             left: 0;
-            width: 300px;
-            height: 165px;
+            width: 100%;
+            height: 100%;
             display: none;
         }
 

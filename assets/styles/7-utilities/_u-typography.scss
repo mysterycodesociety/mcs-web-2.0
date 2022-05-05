@@ -7,7 +7,7 @@
 	@include font-sizing();
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
 	.u-lg-font-size {
 		@include font-sizing();
 	}
@@ -22,7 +22,7 @@
 	@include line-height();
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
 	.u-lg-line-height {
 		@include line-height();
 	}
@@ -30,7 +30,7 @@
 
 //  Font-Weights
 .u-font-weight-regular {
-	font-weight: var(--$font-weight-regular);
+	font-weight: $font-weight-regular;
 }
 
 .u-font-weight-bold {
@@ -63,7 +63,7 @@
 	text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
 	.u-lg-text-align-left {
 		text-align: left;
 	}

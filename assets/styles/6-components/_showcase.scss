@@ -1,0 +1,5 @@
+@media (max-width: $ipad-landscape) {
+  .showcase-card-container:nth-of-type(5) ~ .showcase-card-container {
+    display: none;
+  };
+}

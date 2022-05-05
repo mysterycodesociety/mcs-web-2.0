@@ -1,3 +1,45 @@
+/* widths */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: 1200px) {
+        max-width: 1152px;
+    }
+}
+.width-auto {
+    width: auto;
+}
+.width-100 {
+    width: 100%;
+}
+.width-75 {
+    width: 75%;
+}
 .width-50 {
     width: 50%;
+}
+.width-33 {
+    width: calc(100% / 3);
+}
+.width-25 {
+    width: 25%;
+}
+
+@media (min-width: $ipad-landscape) {
+    .lg-width-100 {
+        width: 100%;
+    }
+    .lg-width-75 {
+        width: 75%;
+    }
+    .lg-width-50 {
+        width: 50%;
+    }
+    .lg-width-33 {
+        width: calc(100% / 3);
+    }
+    .lg-width-25 {
+        width: 25%;
+    }
 }

@@ -27,10 +27,21 @@
 .u { @include space-inset(); }
 .u { @include space-inset-short(); }
 .u { @include space-inset-tall(); }
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
     .u-lg { @include space-stack(); }
     .u-lg { @include space-inline(); }
     .u-lg { @include space-inset(); }
     .u-lg { @include space-inset-short(); }
     .u-lg { @include space-inset-tall(); }
+    .u-lg-m { @include spacing-utilities(); }
+    .u-lg-p { @include spacing-utilities(padding); }
+}
+@media (max-width: $ipad-landscape) {
+    .u-sm { @include space-stack(); }
+    .u-sm { @include space-inline(); }
+    .u-sm { @include space-inset(); }
+    .u-sm { @include space-inset-short(); }
+    .u-sm { @include space-inset-tall(); }
+    .u-sm-m { @include spacing-utilities(); }
+    .u-sm-p { @include spacing-utilities(padding); }
 }

@@ -1,6 +1,7 @@
 /* Flex Box Layout */
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 .flex-row {
 	flex-direction: row;
@@ -13,22 +14,27 @@
 }
 .justify-content-center {
     justify-content: center;
+    align-items: center;
 }
 .justify-content-space-between {
-	justify-content: space-between;
+    justify-content: space-between;
 }
 .justify-content-end {
-	justify-content: end;
+    justify-content: end;
+}
+.justify-left {
+    justify-content: start;
+    align-items: flex-start;
+    align-self: start;
 }
 .align-items-center {
-	align-items: center;
+    align-items: center;
 }
 .align-items-start {
-	align-items: start;
+    align-items: start;
 }
 
-
-@media (min-width: 1024px) {
+@media (min-width: $ipad-landscape) {
     .lg-flex-row {
         flex-direction: row;
     }
@@ -53,4 +59,18 @@
     .lg-align-items-start {
     	align-items: start;
     }
+
+    .lg-justify-content-space-between {
+        justify-content: space-between;
+    }
+    .lg-justify-content-end {
+        justify-content: end;
+    }
+    .lg-align-items-center {
+        align-items: center;
+    }
+    .lg-align-items-start {
+        align-items: start;
+    }
+
 }

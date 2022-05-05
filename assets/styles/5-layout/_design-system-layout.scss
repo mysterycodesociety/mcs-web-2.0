@@ -29,6 +29,10 @@
 	flex-direction: row;
 	justify-content: flex-start;
 }
+.container {
+	max-width: 1600px;
+}
+
 .containerbox {
 	width: 80%;
 	margin: 48px auto;
@@ -74,4 +78,18 @@
 
 .box-sizing-reset {
 	box-sizing: content-box !important;
+}
+
+.sm-display-none {
+    display: none;
+}
+
+@media (min-width: $ipad-landscape) {
+    .lg-display-none {
+        display: none;
+    }
+
+    .sm-display-none {
+    	display: unset;
+    }
 }

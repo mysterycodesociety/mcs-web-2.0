@@ -1,7 +1,7 @@
 //Buttons
-%button {
+%button, .button {
     width: 150px;
-    padding: var(--space-inset-medium);
+    padding: var(--space-inset-large);
 
     text-align: center;
     text-transform: uppercase;
@@ -15,6 +15,12 @@
     word-break: normal;
     cursor: pointer;
     transition: all 0.5s ease;
+}
+
+a {
+    &.button {
+        display: inline-block;
+    }
 }
 
 //Primary Button (gradient)
@@ -49,7 +55,7 @@
     }
 }
 
-// Tertiary Button - (white bg)
+// Tertiary Button - (transparent bg)
 .button-light {
     @extend %button;
     @include button-light('purple');
@@ -68,6 +74,24 @@
     }
 }
 
+.button-white {
+    @extend %button;
+    @include button-white('purple');
+
+
+    &.button--blue {
+        @include button-white('blue');
+    }
+
+    &.button--green {
+        @include button-white('green');
+    }
+
+    &.button--pink {
+        @include button-white('pink');
+    }
+}
+
 //Width Variations
 .button--small {
     padding: var(--space-inset-small);
@@ -75,4 +99,11 @@
 
 .button--large {
     padding: var(--space-inset-large);
+}
+
+.button--icon {
+    width: var(--space-5x-large);
+    height: var(--space-5x-large);
+    padding: var(--space-2x-small);
+    border-radius: var(--space-small);
 }

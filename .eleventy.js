@@ -37,6 +37,11 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob(["pages/*md", "pages/*liquid"]);
   });
 
+  // limit filter
+  eleventyConfig.addFilter("limit", function(array, limit) {
+    return array.slice(0, limit);
+  });
+
   // Universal slug filter strips unsafe chars from URLs
   eleventyConfig.addFilter("slugify", function(str) {
     return slugify(str, {
