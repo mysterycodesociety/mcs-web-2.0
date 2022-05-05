@@ -1,0 +1,46 @@
+nav {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family-share-tech-mono);
+
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  img {
+    height: 50px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .nav-dropdown-header {
+    font-size: 36px;
+  }
+
+  .nav-dropdown {
+    position: relative;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-items {
+    display: block;
+  }
+
+  .nav-dropdown-items {
+    top: 54.95px;
+    position: absolute;
+    display: none;
+    height: 100%;
+    right: 0;
+    background: white;
+    align-items: center;
+  }
+
+  .nav-dropdown-items li {
+    margin: 10px;
+    margin-top: 15px;
+  }
+
+}

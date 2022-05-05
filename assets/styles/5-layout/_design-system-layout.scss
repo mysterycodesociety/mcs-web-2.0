@@ -81,15 +81,15 @@
 }
 
 .sm-display-none {
-    display: none !important;
+    display: none;
 }
 
 @media (min-width: $ipad-landscape) {
     .lg-display-none {
-        display: none !important;
+        display: none;
     }
 
     .sm-display-none {
-    	display: unset !important;
+    	display: unset;
     }
 }
