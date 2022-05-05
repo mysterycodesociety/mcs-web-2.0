@@ -45,7 +45,19 @@
         justify-content: space-around;
     }
     .lg-justify-content-center {
-        justify-content: space-around;
+        justify-content: center;
+    }
+    .lg-justify-content-space-between {
+		justify-content: space-between;
+	}
+	.lg-justify-content-end {
+		justify-content: end;
+	}
+	.lg-align-items-center {
+        align-items: center;
+    }
+    .lg-align-items-start {
+    	align-items: start;
     }
 
     .lg-justify-content-space-between {

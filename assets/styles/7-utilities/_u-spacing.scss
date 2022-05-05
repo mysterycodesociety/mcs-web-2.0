@@ -3,12 +3,12 @@
 	m or p = all sides,
 	mb or pb = bottom only,
 	mt or pt = top only,
-	ml or pl = left only, 
+	ml or pl = left only,
 	mr or pr = right only
 	mx or px = x axis (left and right sides)
 	my or py = y axis (top and bottom)
-    i.e.    .u-[ m | mb | mt | ml | mr | mx | my ]-[ spacing value (see spacing-variables) ]  
-			.u-[ p | pb | pt | pl | pr | px | py ]-[ spacing value (see spacing-variables) ]  
+    i.e.    .u-[ m | mb | mt | ml | mr | mx | my ]-[ spacing value (see spacing-variables) ]
+			.u-[ p | pb | pt | pl | pr | px | py ]-[ spacing value (see spacing-variables) ]
  */
 
 .u-m { @include spacing-utilities(); }
