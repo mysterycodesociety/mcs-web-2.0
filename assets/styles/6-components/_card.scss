@@ -6,6 +6,10 @@
 
     &.constrained {
         max-width: 360px;
+
+            @media (max-width: $ipad-landscape) {
+                max-width: 100%;
+            }
     }
 
     .card__icon {
@@ -36,12 +40,15 @@
 
     &.card-border-button {
         width: 100%;
-
         border-radius: var(--space-small);
         box-shadow:  0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 7px 8px rgba(0, 0, 0, 0.2);
 
         &.constrained {
             max-width: 360px;
+
+            @media (max-width: $ipad-landscape) {
+                max-width: 100%;
+            }
         }
 
         .card__copy {
@@ -83,11 +90,14 @@
         .card__button {
             display: flex;
             justify-content: center;
+
+            button, a {
+                max-width: 300px;
+
+            }
         }
 
-        button {
-            max-width: 300px;
-        }
+
     }
 
     &.card-full-image {
@@ -123,6 +133,15 @@
         &:hover .card__copy {
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 51.04%, rgba(0, 0, 0, 0.699057) 76.04%, #000000 100%);
             display: block;
+        }
+    }
+
+    .card__button {
+        .button-light {
+            padding-left: 0;
+            padding-right: 0;
+            border-radius: 0;
+            width: auto;
         }
     }
 }
