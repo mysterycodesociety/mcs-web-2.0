@@ -8,8 +8,11 @@ nav {
     color: var(--black);
   }
 
-  img {
-    height: 50px;
+  .logo {
+    img {
+      height: 50px;
+      width: auto;
+    }
   }
 
   ul {

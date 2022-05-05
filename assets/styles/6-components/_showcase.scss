@@ -3,3 +3,11 @@
     display: none;
   };
 }
+
+.showcase-card-container:nth-of-type(20) ~ .showcase-card-container {
+    display: none;
+};
+
+.showcase-card-container {
+  overflow: hidden;
+}
