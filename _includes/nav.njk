@@ -1,59 +1,46 @@
-<div class="header-wrapper">
-    <header class="header">
-        <a href="/index.html" class="logo">
-            <!-- Mystery Code Society icon & name -->
-            <img src="/assets/images/mcs-logo-sm-no-text.svg"><span class="brand-name-icon"> <span class="bold">Mystery Code </span> Society</span>
-        </a>
-        <!-- Hamburger Icon -->
-        <input class="side-menu" type="checkbox" id="side-menu" />
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-        <!-- Navigation -->
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="">Learn</a></li>
-                <li><a href="">Volunteer</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="4MFTJQZ34UFZE">
-                        <button class="button button--small button--yellow" name="submit">Donate</button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
-    </header>
-</div>
-    {# <nav class="flex align-items-center justify-content-space-between">
-        <div class="u-ml-medium">
-            <a href="/index.html">
-                <!-- TODO: we probably want to get a logo with Mystery Code Society to the right of the magnifying glass. -->
-                <!-- Also, since the logo/homepage link isn't aligned with the other items in the nav collection, -->
-                <!-- we may want to remove index.liquid's eleventyNavigation key.-->
-                <img src="/assets/images/mcs-logo-sm-no-text.svg">
-            </a>
-        </div>
-
-        <div class="nav-dropdown">
-            <div class="nav-dropdown-header u-mr-medium">≡</div>
-            <ul class="nav-dropdown-items">
-                {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
-                    listItemElement: "li",
-                    activeKey: eleventyNavigation.key,
-                    showExcerpt: false
-                }) | safe }}
-
-                <li>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="4MFTJQZ34UFZE">
-                        <button class="button button--small button--yellow" name="submit">Donate</button>
-                    </form>
-                </li>
-            </ul>
-        </div>
-
+<header class="header">
+    <a
+        href="/index.html" class="logo-section">
+        <!-- Mystery Code Society icon & name -->
+        <img src="/assets/images/mcs-logo-sm-no-text.svg">
+        <span class="brand-name-icon u-text-uppercase">
+            <span class="font-weight-bold">Mystery Code
+            </span>
+            Society
+        </span>
+    </a>
+    <!-- Hamburger Icon -->
+    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+    </label>
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul
+            class="menu">
+            {# <li>
+                <a href="">Learn</a>
+            </li>
+            <li>
+                <a href="">Volunteer</a>
+            </li>
+            <li>
+                <a href="">Support</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Blog</a>
+            </li> #}
+            <li>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="4MFTJQZ34UFZE">
+                    <button class="button button--small button--yellow donate-button" name="submit">Donate</button>
+                </form>
+            </li>
+        </ul>
     </nav>
-</header> #}
+</header>
+<div style="padding-bottom: 40px"></div>
