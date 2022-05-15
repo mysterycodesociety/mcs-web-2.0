@@ -1,5 +1,54 @@
 [
   {
+    "className": "JS Games",
+    "studentName": "Given",
+    "title": "Racing Game",
+    "link": "https://makecode.com/_6Yze87goDMtg",
+    "image": "/assets/images/projects/js-games-given.png"
+  },
+  {
+    "className": "JS Games",
+    "studentName": "Mateo",
+    "title": "el mono de Mateo",
+    "link": "https://makecode.com/_cXfdPTD97L45",
+    "image": "/assets/images/projects/js-games-mateo.png"
+  },
+    {
+    "className": "JS Games",
+    "studentName": "Charlie",
+    "title": "Programmer Tycoon",
+    "link": "https://makecode.com/_fAWdoqRaCaLi",
+    "image": "/assets/images/projects/js-games-charlie.png"
+  },
+  {
+    "className": "JS Games",
+    "studentName": "Arjun",
+    "title": "Illusions",
+    "link": "https://makecode.com/_2jv3LT8T4X8a",
+    "image": "/assets/images/projects/js-games-arjun.png"
+  },
+  {
+    "className": "JS Games",
+    "studentName": "Jessica",
+    "title": "Scrimblor and the redundant rings",
+    "link": "https://makecode.com/_7jwberRWDhEm",
+    "image": "/assets/images/projects/js-games-jessica.png"
+  },
+  {
+    "className": "JS Games",
+    "studentName": "Gavin",
+    "title": "Plane Game",
+    "link": "https://makecode.com/_FK3gKdgHXLyD",
+    "image": "/assets/images/projects/js-games-gavin.png"
+  },
+  {
+    "className": "JS Games",
+    "studentName": "Jianning",
+    "title": "Bake Cookies!",
+    "link": "https://makecode.com/_Vkycam0sLXP0",
+    "image": "/assets/images/projects/js-games-jianning.png"
+  },
+  {
     "className": "HTMelle",
     "studentName": "Lilly",
     "title": "How To Make Chocolate Chip Cookies",
