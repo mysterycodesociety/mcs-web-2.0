@@ -50,6 +50,10 @@
 	text-transform: capitalize !important;
 }
 
+.u-text-transform-none {
+	text-transform: unset;
+}
+
 //Text Alignment
 .u-text-align-left {
 	text-align: left;

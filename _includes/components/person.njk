@@ -1,0 +1,13 @@
+<div class="card card-person u-py-2x-large u-mx-2x-large">
+    <div class="frame">
+      <img src="{{ person.pic }}" alt="picture of {{ person.name }}"/>
+    </div>
+    <div class="card__title">
+      <h3 class="card__headline">
+        {{ person.name }}
+      </h3>
+      {% if person.title %}
+        <p class="card__subheadline">{{ person.title }}</p>
+      {% endif %}
+    </div>
+</div>

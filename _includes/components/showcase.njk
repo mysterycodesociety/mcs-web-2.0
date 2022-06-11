@@ -1,6 +1,10 @@
-<h2 class="u-text-uppercase u-text-align-center">Student Project Showcase</h2>
 <div class="show-case-container flex flex-column lg-flex-row sm-display-none">
-    {% for project in projects %}
+    {% comment %}
+      If you look at guides, you will see there is a way to register filters in eleventy and reference them, but there is also a bug where liquid interprets these as liquid.  So the workaround is to sort/filter in liquid instead.
+
+      See: https://github.com/11ty/eleventy/issues/504#issuecomment-487448196
+    {% endcomment %}
+    {% for project in projects limit:20 %}
       <div class="showcase-card-container u-p-small u-py-2x-large" style="flex-basis:25%;">
         <div class="card card-full-image">
           <div class="image-container">

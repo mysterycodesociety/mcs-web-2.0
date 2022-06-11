@@ -38,6 +38,15 @@
         }
     }
 
+    .card__button {
+        .button-light {
+            padding-left: 0;
+            padding-right: 0;
+            border-radius: 0;
+            width: auto;
+        }
+    }
+
     &.card-border-button {
         width: 100%;
         border-radius: var(--space-small);
@@ -136,12 +145,24 @@
         }
     }
 
-    .card__button {
-        .button-light {
-            padding-left: 0;
-            padding-right: 0;
-            border-radius: 0;
-            width: auto;
+    &.card-person {
+        width: 166px;
+
+        .frame {
+            width: 100%;
+            height: 166px;
+            overflow: hidden;
+            border-radius: 50%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .card__title {
+            overflow-wrap: break-word;
+            text-align: center;
         }
     }
 }
