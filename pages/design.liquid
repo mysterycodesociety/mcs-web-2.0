@@ -1,5 +1,5 @@
 ---
-layout: layouts/default.njk
+layout: layouts/blank.njk
 title: Mystery Code Society Design Guide
 date: 2021-07-21T00:00:00.000Z
 permalink: /design.html
@@ -206,22 +206,53 @@ permalink: /design.html
 				</div>
 			</div>
 
-      		<div class="flex flex-row justify-content-space-around">
+      <div class="flex flex-row justify-content-space-around">
 				<h4>Color Utility Classes Available</h4>
 			</div>
-				<div class="flex flex-column">
-					<p>.u-background-color-[main/secondary]-[color]
-					<br><strong>Example:</strong> .u-background-color-main-green</p>
-					<br>
-					<p>.u-text-color-[main/secondary]-[color]
-					<br><strong>Example:</strong>.u-text-color-main-green-light
-					</p>
-					<br>
-					<p>.u-border-color-[main/secondary]-[color]
-					<br><strong>Example:</strong>.u-border-color-main-green-dark
-					</p>
-					<br>
+			<div class="flex flex-column">
+				<p>.u-background-color-[main/secondary]-[color]
+				<br><strong>Example:</strong> .u-background-color-main-green</p>
+				<br>
+				<p>.u-text-color-[main/secondary]-[color]
+				<br><strong>Example:</strong>.u-text-color-main-green-light
+				</p>
+				<br>
+				<p>.u-border-color-[main/secondary]-[color]
+				<br><strong>Example:</strong>.u-border-color-main-green-dark
+				</p>
+				<br>
+				<div class="flex flex-row">
+					<div class="containerbox color-box u-mb-medium u-background-color-main-green u-border-color-black">
+						<p class="text-light">$main-green background<br></p>
+						#009688
+					</div>
+					<div class="containerbox color-box u-mb-medium u-text-color-main-green-light">
+						<p>$main-green-light text<br>
+							#80CBC4/p>
+					</div>
+					<div class="containerbox color-box u-mb-medium u-border-color-main-green-dark">
+						<p>$main-green-dark border<br>
+							#004B44</p>
+					</div>
 				</div>
+			</div>
+
+			<div class="flex flex-row justify-content-space-around">
+				<h4>Color Gradient Classes Available</h4>
+			</div>
+				<p>.u-background-gradient-[color]
+				<br><strong>Example:</strong> .u-background-gradient-purple
+				<br><strong>Example:</strong> .u-background-gradient-blue-green</p>
+			<div class="flex flex-row">
+				<div class="color-box u-mb-medium u-background-gradient-purple">
+					<p class="text-light">$gradient-purple<br>
+						#AC1F86, #7B1FA2, #563FB1</p>
+				</div>
+				<div class="color-box u-mb-medium u-background-gradient-blue-green">
+					<p class="text-light">$gradient-blue-green<br>
+						#0288D1, #009688</p>
+				</div>
+			</div>
 		</section>
 
 		<section id="typography" class="containerbox">
