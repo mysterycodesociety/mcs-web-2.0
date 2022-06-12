@@ -13,6 +13,7 @@
 
             @media (max-width: $ipad-landscape) {
                 max-width: 100%;
+                width: 100%;
             }
     }
 
@@ -108,7 +109,6 @@
 
             }
         }
-
 
     }
 
@@ -253,5 +253,12 @@
             }
 
         }
+    }
+}
+
+.card {
+    li {
+        padding-left: var(--space-small);
+        list-style-position: inside;
     }
 }
