@@ -157,5 +157,32 @@
     "roles": [
       "organizer"
     ]
+  },
+  {
+    "name": "Payden Dyer",
+    "pic": "/assets/images/volunteers/payden_dyer.png",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "organizer"
+    ]
+  },
+  {
+    "name": "Debbie Petru",
+    "pic": "/assets/images/volunteers/debbie_petru.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "speaker"
+    ]
+  },
+  {
+    "name": "Sobie Don",
+    "pic": "/assets/images/volunteers/sobie_don.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "speaker"
+    ]
   }
 ]
