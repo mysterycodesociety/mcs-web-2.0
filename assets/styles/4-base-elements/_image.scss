@@ -1,5 +1,10 @@
 img {
     width: 100%;
+
+    &.wide {
+        width: auto;
+        height: 100%;
+    }
 }
 
 .image-container {
