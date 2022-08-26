@@ -12,11 +12,12 @@
 .u-background-gradient-blue-green {
 	background: $gradient-blue-green;
 }
-
 .u-background-gradient-orange-pink {
 	background: $gradient-orange-pink;
 }
-
+.u-background-gradient-purple {
+	background: $gradient-purple;
+}
 .u-text-color{
 	@include color();
 }
