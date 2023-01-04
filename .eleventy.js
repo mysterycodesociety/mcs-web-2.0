@@ -37,9 +37,16 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob(["pages/*md", "pages/*liquid"]);
   });
 
-  // limit filter
-  eleventyConfig.addFilter("limit", function(array, limit) {
-    return array.slice(0, limit);
+  eleventyConfig.addFilter("getBoard", function (arr) {
+    return arr.filter((item) => item.group === "Board");
+  });
+
+  eleventyConfig.addFilter("getAdvisory", function (arr) {
+    return arr.filter((item) => item.group === "Advisory");
+  });
+
+  eleventyConfig.addFilter("getVolunteers", function (arr) {
+    return arr.filter((item) => item.group === "Volunteer");
   });
 
   // Universal slug filter strips unsafe chars from URLs

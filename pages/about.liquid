@@ -1,0 +1,135 @@
+---
+layout: layouts/default.njk
+title: Mystery Code Society
+date: 2021-07-21T00:00:00.000Z
+permalink: /about.html
+eleventyNavigation:
+  key: About
+  order: 2
+---
+
+<section id="about_mission" class="u-background-gradient-orange-pink u-text-color-white">
+  <div class="container u-py-7x-large u-px-large">
+
+      <div class="flex flex-column lg-flex-row">
+        <div class="width-50 u-lg-pr-4x-large u-lg-pt-6x-large u-pb-3x-large">
+          <h1 class="u-pb-medium">Mission</h1>
+          <h4 class="u-text-transform-none">
+            Our mission is to champion gender equity in tech through beginner and intermediate coding education for people of marginalized genders.
+          </h4>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section id="about_story">
+  <div class="container u-py-7x-large u-px-large">
+
+      <div class="flex flex-column lg-flex-row lg-justify-content-start justify-content-center">
+        <div class="lg-width-50 u-lg-pt-6x-large u-lg-pr-7x-large">
+          <img src="assets/images/board-members.jpg" alt="original founders having fun at graduation" />
+        </div>
+        <div class="lg-width-50">
+          <h2 class="u-pb-x-large u-text-uppercase">Our Story</h2>
+          <p class="u-pb-x-large">
+            Mystery Code Society began as Omaha’s first Girls Who Code club at the Abraham’s Branch Public library in February 2016.  After back-to-back clubs, the organizers developed custom classes to cater to the interests of our students.  In 2018, four of the original organizers and teachers, Shannon Jackson, Eris Koleszar, Sandi Barr, and Wendy Holley, formed Mystery Code Society as a corporation and nonprofit.  The nonprofit gave us opportunities to formalize our operations, accept donations, and organize for the future.
+          </p>
+
+          <p>
+            “Mystery Code Society” was a suggestion from one of our students, Apurva, and we liked that the name suggested both community and a fun problem to solve, reflecting the way our classes felt.  We consider ourselves to be solving “The Mystery of the Missing Genders in Tech,” and we also consider ourselves to be, in relationship with others, the solution.
+          </p>
+        </div>
+      </div>
+
+  </div>
+
+</section>
+<section id="about_community" class="u-background-gradient-blue-green u-text-color-white">
+
+  <div class="container u-py-7x-large u-px-large">
+
+      <h2 class="u-pb-x-large u-text-uppercase">Our Community</h2>
+      <p class="u-pb-x-large">
+        When we began Mystery Code Society, we considered the community we were serving to be “women, femmes, and non-men” instead of “people of marginalized genders,” and that was the language that was in our mission statement.  At the time, we were still learning about all the ways people could be marginalized by their gender.
+      </p>
+
+      <p class="u-pb-x-large">
+        In 2020, we revisited our mission and voted to change the language to “people of marginalized genders.”  For trans men, who were excluded from our previous mission, we were so focused on validating their identity as men that we were ignoring the ways in which they are marginalized.  We thought it would be wrong to exclude a person from our community because they decided to transition to another gender.  We also hadn’t thought enough about gender fluidity and whether nonbinary people and others would feel represented by the term “non-men.”
+      </p>
+
+      <p>
+        We know that, in conversations with others, we will continue to learn about gender, and we hope that the term “people of marginalized gender” is a term that can grow with us.  But if this term doesn’t, we remain open to hearing more and changing our mission again when the time comes.
+      </p>
+
+  </div>
+
+
+</section>
+
+<section id="about_people">
+  <div class="container u-py-7x-large u-px-large">
+    <div class="board u-pb-3x-large">
+      <h2 class="u-text-uppercase u-text-align-center">Board of Directors</h2>
+      {% assign board = people | getBoard %}
+      <div class="board-container flex flex-row">
+        {% for person in board %}
+            {% include components/person.njk %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="advisory u-pb-3x-large">
+      <h2 class="u-text-uppercase u-text-align-center"> Advisory Board & Code of Conduct Committee
+      </h2>
+
+      {% assign advisory = people | getAdvisory %}
+      <div class="board-container flex flex-row">
+        {% for person in advisory %}
+            {% include components/person.njk %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="volunteers">
+      <h2 class="u-text-uppercase u-text-align-center">Volunteers</h2>
+
+      {% assign volunteers = people | getVolunteers %}
+      <div class="board-container flex flex-row">
+        {% for person in volunteers %}
+            {% include components/person.njk %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="u-text-align-center">
+      <p class="u-pb-x-large">
+        We could not put on the quality programming that Mystery Code Society offers without our volunteers.
+      </p>
+      <p>
+        Our Board is a working Board of hands-on volunteers and meets quarterly.  Between Board meetings, our officers—elected from among the Board members—can act on behalf of our Board.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<section id="about_join" class="u-background-gradient-blue-green u-text-color-white">
+  <div class="container u-py-7x-large u-px-large">
+
+      <h2 class="u-pb-x-large u-text-uppercase">To Join Our Board</h2>
+      <p class="u-pb-x-large">
+        Our Board members are elected by the previous Board members.  Board members are active volunteers in our organization, typically a commitment of ~10 hours per month, and serve a two-year term with half the members’ terms expiring each year. We have 4-10 Board members, including four officers.  They must also attend ¾ of our Board meetings (6 total a year).
+      </p>
+
+      <p class="u-pb-x-large">
+        Advisory Board members are also volunteers, but without commitments to attend meetings or volunteer a certain number of hours.  Advisory members’ votes do not count as a vote of a Board member, but they are asked to advise.  Advisory Board members apply for a single-year term.
+      </p>
+
+      <p class="u-pb-x-large">
+        At the first annual meeting, our officers are elected from among our Board members.
+      </p>
+      <p>
+        Our application process for Board and advisory members begins in November, and applications are due in early January.  If you are interested, join our mailing list to learn when the process starts!
+      </p>
+
+  </div>
+</section>
