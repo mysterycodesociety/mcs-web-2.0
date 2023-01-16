@@ -1,6 +1,6 @@
 # mcs-web
 
-This is the design guide for MCS's new website - to be launched.
+This is the design guide for MCS's new website.
 
 # Technologies
 
