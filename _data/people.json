@@ -8,11 +8,11 @@
     "roles": ["ta", "speaker", "organizer"]
   },
   {
-    "name": "Autumn Rodeheaver",
-    "pic": "/assets/images/volunteers/autumn.jpg",
+    "name": "Tera Maher",
+    "pic": "/assets/images/volunteers/tera.jpg",
     "group": "Board",
-    "title": "Secretary",
-    "roles": ["organizer"]
+    "title": "Vice President",
+    "roles": ["instructor", "speaker", "organizer"]
   },
   {
     "name": "Grace Erixon",
@@ -22,10 +22,10 @@
     "roles": ["instructor", "ta", "organizer"]
   },
   {
-    "name": "Kafayah Lawal",
-    "pic": "/assets/images/volunteers/kafayah_lawal.jpeg",
+    "name": "Ashley Udell",
+    "pic": "/assets/images/volunteers/ashley_udell.jpeg",
     "group": "Board",
-    "title": "Board Member",
+    "title": "Secretary",
     "roles": []
   },
   {
@@ -50,13 +50,6 @@
     "roles": ["instructor", "organizer"]
   },
   {
-    "name": "Tera Maher",
-    "pic": "/assets/images/volunteers/tera.jpg",
-    "group": "Board",
-    "title": "Board Member",
-    "roles": ["instructor", "speaker", "organizer"]
-  },
-  {
     "name": "Ash Kresl",
     "pic": "/assets/images/volunteers/ash_kresl.JPG",
     "group": "Advisory",
@@ -64,11 +57,11 @@
     "roles": []
   },
   {
-    "name": "Ashley Udell",
-    "pic": "/assets/images/volunteers/ashley_udell.jpeg",
+    "name": "Autumn Rodeheaver",
+    "pic": "/assets/images/volunteers/autumn.jpg",
     "group": "Advisory",
     "title": "",
-    "roles": []
+    "roles": ["organizer"]
   },
   {
     "name": "Debbie Petru",
@@ -80,6 +73,13 @@
   {
     "name": "Funmi During",
     "pic": "/assets/images/volunteers/Funmi.jpg",
+    "group": "Advisory",
+    "title": "",
+    "roles": []
+  },
+  {
+    "name": "Kafayah Lawal",
+    "pic": "/assets/images/volunteers/kafayah_lawal.jpeg",
     "group": "Advisory",
     "title": "",
     "roles": []
