@@ -29,6 +29,13 @@
     "roles": []
   },
   {
+    "name": "Ash Kresl",
+    "pic": "/assets/images/volunteers/ash_kresl.JPG",
+    "group": "Board",
+    "title": "Board Member",
+    "roles": []
+  },
+  {
     "name": "Lingli Gan",
     "pic": "/assets/images/volunteers/lingli.jpg",
     "group": "Board",
@@ -48,13 +55,6 @@
     "group": "Board",
     "title": "Board Member",
     "roles": ["instructor", "organizer"]
-  },
-  {
-    "name": "Ash Kresl",
-    "pic": "/assets/images/volunteers/ash_kresl.JPG",
-    "group": "Advisory",
-    "title": "",
-    "roles": []
   },
   {
     "name": "Autumn Rodeheaver",
