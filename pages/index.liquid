@@ -20,7 +20,7 @@ eleventyNavigation:
         </div>
         <div id="upcoming" class="flex flex-column justify-content-center u-pt-6x-large u-lg-pt-0">
           <h4 class="justify-left u-pb-6x-large u-lg-pb-large">Upcoming & Current Courses</h4>
-            {% include components/class.liquid %}
+          {% include components/class.liquid %}
         </div>
       </div>
     </div>
@@ -46,7 +46,10 @@ eleventyNavigation:
         </div>
 
         <div class="card__button">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScB9HXnrUzYLOnQFDS9-AuS4IFY4snWT9W_4qJUWkq9YKn0Cw/viewform" target="_blank" class="button button-light button--small">Sign up</a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScB9HXnrUzYLOnQFDS9-AuS4IFY4snWT9W_4qJUWkq9YKn0Cw/viewform"
+            target="_blank"
+            class="button button-light button--small">Sign up</a>
         </div>
       </div>
     </div>
@@ -68,14 +71,17 @@ eleventyNavigation:
 
         <div class="card__button">
 
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiXbaRGe5WPswOJRKtn3ZshgzTu4TrTPkp-cEBITJJnRH56A/viewform" target="_blank" class="button button-light button--small">Volunteer</a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfiXbaRGe5WPswOJRKtn3ZshgzTu4TrTPkp-cEBITJJnRH56A/viewform"
+            target="_blank"
+            class="button button-light button--small">Volunteer</a>
         </div>
       </div>
     </div>
     <div class="card constrained">
       <div class="card__icon">
         <div class="image-container">
-            <img src="/assets/images/icon/heart.png" alt="outline of heart">
+          <img src="/assets/images/icon/heart.png" alt="outline of heart">
         </div>
       </div>
       <div class="card__copy">
@@ -89,9 +95,19 @@ eleventyNavigation:
         </div>
 
         <div class="card__button">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="display:inline-block;">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="4MFTJQZ34UFZE">
+          <form
+            action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"
+            target="_blank"
+            style="display:inline-block;">
+            <input
+              type="hidden"
+              name="cmd"
+              value="_s-xclick">
+            <input
+              type="hidden"
+              name="hosted_button_id"
+              value="4MFTJQZ34UFZE">
             <button class="button button--small button-light u-space-stack-medium" name="submit">Donate</button>
           </form>
         </div>
@@ -102,11 +118,11 @@ eleventyNavigation:
 </section>
 
 <section id="project-showcase">
-      <div class="u-py-3x-large">
-          <h2 class="u-text-uppercase u-text-align-center">Student Project Showcase</h2>
+  <div class="u-py-3x-large">
+    <h2 class="u-text-uppercase u-text-align-center">Student Project Showcase</h2>
 
-          {% include components/showcase.njk %}
-      </div>
+    {% include components/showcase.njk %}
+  </div>
 </section>
 
 <section id="about-us">
@@ -120,15 +136,31 @@ eleventyNavigation:
           Accessibility is one of our core values.  We do not charge our students any kind of tuition!  We accomplish so much on a small budget derived solely from generous donations. We need your support to make our coding education accessible to our students.
         </p>
         <p class="u-mb-2x-large">
-          Please contact us at <a href="mailto:hello@mysterycodesociety.com">hello@mysterycodesociety.com</a> about sponsorship opportunities:  Graduation Sponsor, Location Sponsor, Pizza Sponsor and Snack Sponsor.
+          Please contact us at
+          <a href="mailto:hello@mysterycodesociety.com">hello@mysterycodesociety.com</a>
+          about sponsorship opportunities:  Graduation Sponsor, Location Sponsor, Pizza Sponsor and Snack Sponsor.
         </p>
         <p class="u-mb-2x-large">
           Please donate today!
         </p>
-        <a href="assets/sponsorship_packet.pdf" class="button button-white button--green button--small" target="_blank" download>Learn More</a>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="display:inline-block;">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="4MFTJQZ34UFZE">
+        <a
+          href="assets/sponsorship_packet.pdf"
+          class="button button-white button--green button--small"
+          target="_blank"
+          download>Learn More</a>
+        <form
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+          target="_blank"
+          style="display:inline-block;">
+          <input
+            type="hidden"
+            name="cmd"
+            value="_s-xclick">
+          <input
+            type="hidden"
+            name="hosted_button_id"
+            value="4MFTJQZ34UFZE">
           <button class="button button--small button--green button-white u-space-inline-medium u-space-stack-medium" name="submit">Donate</button>
         </form>
       </div>
