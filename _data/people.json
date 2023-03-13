@@ -106,39 +106,11 @@
     "roles": ["ta", "organizer"]
   },
   {
-    "name": "Alexandra Millatmal",
-    "group": "Volunteer",
-    "pic": "/assets/images/volunteers/alexandram.jpg",
-    "title": "",
-    "roles": []
-  },
-  {
     "name": "Amanda Martinez",
     "pic": "/assets/images/volunteers/amanda.jpg",
     "group": "Volunteer",
     "title": "",
     "roles": ["instructor", "organizer"]
-  },
-  {
-    "name": "Ciprianna Engel",
-    "pic": "/assets/images/volunteers/ciprianna.jpg",
-    "group": "Volunteer",
-    "title": "",
-    "roles": ["instructor"]
-  },
-  {
-    "name": "Lauren Roberts",
-    "pic": "/assets/images/volunteers/laurenr.jpg",
-    "group": "Volunteer",
-    "title": "",
-    "roles": ["ta"]
-  },
-  {
-    "name": "Andrew Yolland",
-    "pic": "/assets/images/volunteers/andrew.jpg",
-    "group": "Volunteer",
-    "title": "",
-    "roles": ["ta", "organizer"]
   },
   {
     "name": "Brenda Agüero Carranza",
@@ -148,11 +120,39 @@
     "roles": ["organizer"]
   },
   {
+    "name": "Ciprianna Engel",
+    "pic": "/assets/images/volunteers/ciprianna.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": ["instructor"]
+  },
+  {
+    "name": "Juan Chavez",
+    "pic": "/assets/images/volunteers/Juan_Chavez.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": []
+  },
+  {
+    "name": "Lauren Roberts",
+    "pic": "/assets/images/volunteers/laurenr.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": ["ta"]
+  },
+  {
     "name": "Payden Dyer",
     "pic": "/assets/images/volunteers/payden_dyer.png",
     "group": "Volunteer",
     "title": "",
     "roles": ["organizer"]
+  },
+  {
+    "name": "Rosemary Keenan",
+    "pic": "/assets/images/volunteers/Rosemary_Keenan.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": []
   },
   {
     "name": "Sobie Don",
