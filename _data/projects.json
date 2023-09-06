@@ -1,5 +1,33 @@
 [
   {
+    "className": "Intro to Android Mobile App Development",
+    "studentName": "Charlie",
+    "title": "Clicker",
+    "link": "https://github.com/cj2clifton/PC_Clicker.git",
+    "image": "/assets/images/projects/Android-Charlie.gif"
+  },
+  {
+    "className": "Intro to Android Mobile App Development",
+    "studentName": "Esha",
+    "title": "Name Generator",
+    "link": "https://github.com/sdawgforever/name_generator.git",
+    "image": "/assets/images/projects/Android-Esha.gif"
+  },
+  {
+    "className": "Intro to Android Mobile App Development",
+    "studentName": "Sudeep",
+    "title": "Shopping Speed",
+    "link": "https://github.com/SudeepBiswa/ShoppingSpeed",
+    "image": "/assets/images/projects/Android-Sudeep.gif"
+  },
+  {
+    "className": "Intro to Android Mobile App Development",
+    "studentName": "Prajjwal",
+    "title": "Candy Clicker",
+    "link": "https://github.com/DevTatsuya/My_Application.git",
+    "image": "/assets/images/projects/Android-Prajjwal.gif"
+  },        
+  {
     "className": "JS Games",
     "studentName": "Given",
     "title": "Racing Game",
