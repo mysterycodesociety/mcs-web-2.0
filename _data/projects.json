@@ -1,6 +1,13 @@
 [
   {
     "className": "Intro to Android Mobile App Development",
+    "studentName": "Esha",
+    "title": "Mood Tracker",
+    "link": "https://github.com/eshavadde08/My_Application.git",
+    "image": "/assets/images/projects/Android-Esha.gif"
+  },  
+  {
+    "className": "Intro to Android Mobile App Development",
     "studentName": "Charlie",
     "title": "Clicker",
     "link": "https://github.com/cj2clifton/PC_Clicker.git",
@@ -8,10 +15,10 @@
   },
   {
     "className": "Intro to Android Mobile App Development",
-    "studentName": "Esha",
+    "studentName": "Sofia",
     "title": "Name Generator",
     "link": "https://github.com/sdawgforever/name_generator.git",
-    "image": "/assets/images/projects/Android-Esha.gif"
+    "image": "/assets/images/projects/Android-Sofia.gif"
   },
   {
     "className": "Intro to Android Mobile App Development",
