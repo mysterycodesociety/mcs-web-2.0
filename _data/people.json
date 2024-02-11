@@ -1,18 +1,10 @@
 [
   {
-    "name": "Hauwa Muibi",
-    "pic": "/assets/images/volunteers/hauwa.jpg",
+    "name": "Ashley Udell",
+    "pic": "/assets/images/volunteers/ashley_udell.jpeg",
     "group": "Board",
-    "board": true,
     "title": "President",
-    "roles": ["ta", "speaker", "organizer"]
-  },
-  {
-    "name": "Tera Maher",
-    "pic": "/assets/images/volunteers/tera.jpg",
-    "group": "Board",
-    "title": "Vice President",
-    "roles": ["instructor", "speaker", "organizer"]
+    "roles": ["organizer"]
   },
   {
     "name": "Grace Erixon",
@@ -22,18 +14,18 @@
     "roles": ["instructor", "ta", "organizer"]
   },
   {
-    "name": "Ashley Udell",
-    "pic": "/assets/images/volunteers/ashley_udell.jpeg",
+    "name": "Clarice Santos",
+    "pic": "/assets/images/volunteers/clarice_santos.jpg",
     "group": "Board",
     "title": "Secretary",
     "roles": []
   },
   {
-    "name": "Ash Kresl",
-    "pic": "/assets/images/volunteers/ash_kresl.JPG",
-    "group": "Board",
+    "name": "Hauwa Muibi",
+    "pic": "/assets/images/volunteers/hauwa.jpg",
+    "group": "Board",                                
     "title": "Board Member",
-    "roles": []
+    "roles": ["ta", "speaker", "organizer"]
   },
   {
     "name": "Lingli Gan",
@@ -43,39 +35,25 @@
     "roles": ["instructor", "organizer"]
   },
   {
-    "name": "Mary Donovan Martello",
-    "pic": "/assets/images/volunteers/marydonovanmartello.jpg",
+    "name": "Tera Maher",
+    "pic": "/assets/images/volunteers/tera.jpg",
     "group": "Board",
     "title": "Board Member",
+    "roles": ["instructor", "speaker", "organizer"]
+  },
+  {
+    "name": "Mary Donovan Martello",
+    "pic": "/assets/images/volunteers/marydonovanmartello.jpg",
+    "group": "Advisory",
+    "title": "",
     "roles": ["ta", "organizer"]
   },
   {
     "name": "Morgan Haworth",
     "pic": "/assets/images/volunteers/MorganHaworth.jpg",
-    "group": "Board",
-    "title": "Board Member",
+    "group": "Advisory",
+    "title": "",
     "roles": ["instructor", "organizer"]
-  },
-  {
-    "name": "Autumn Rodeheaver",
-    "pic": "/assets/images/volunteers/autumn.jpg",
-    "group": "Advisory",
-    "title": "",
-    "roles": ["organizer"]
-  },
-  {
-    "name": "Debbie Petru",
-    "pic": "/assets/images/volunteers/debbie_petru.jpg",
-    "group": "Advisory",
-    "title": "",
-    "roles": ["speaker"]
-  },
-  {
-    "name": "Funmi During",
-    "pic": "/assets/images/volunteers/Funmi.jpg",
-    "group": "Advisory",
-    "title": "",
-    "roles": []
   },
   {
     "name": "Kafayah Lawal",
@@ -90,20 +68,6 @@
     "pic": "/assets/images/volunteers/laurens.png",
     "title": "",
     "roles": ["organizer"]
-  },
-  {
-    "name": "Mitch Barry",
-    "pic": "/assets/images/volunteers/mitch_barry.png",
-    "group": "Advisory",
-    "title": "",
-    "roles": []
-  },
-  {
-    "name": "Tia J.",
-    "pic": "/assets/images/volunteers/tawanna.jpg",
-    "group": "Advisory",
-    "title": "",
-    "roles": ["ta", "organizer"]
   },
   {
     "name": "Amanda Martinez",
@@ -152,7 +116,7 @@
     "pic": "/assets/images/volunteers/Rosemary_Keenan.jpg",
     "group": "Volunteer",
     "title": "",
-    "roles": []
+    "roles": ["instructor"]
   },
   {
     "name": "Sobie Don",
