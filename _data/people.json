@@ -1,21 +1,25 @@
 [
   {
-    "name": "Ashley Udell",
-    "pic": "/assets/images/volunteers/ashley_udell.jpg",
-    "group": "Board",
-    "title": "President",
-    "roles": ["organizer"]
-  },
-  {
     "name": "Grace Erixon",
     "pic": "/assets/images/volunteers/grace.jpg",
     "group": "Board",
-    "title": "Treasurer",
-    "roles": ["instructor", "ta", "organizer"]
+    "title": "President",
+    "roles": [
+      "instructor",
+      "ta",
+      "organizer"
+    ]
   },
   {
     "name": "Clarice Santos",
     "pic": "/assets/images/volunteers/clarice_santos.jpg",
+    "group": "Board",
+    "title": "Treasurer",
+    "roles": []
+  },
+  {
+    "name": "Kafayah Lawal",
+    "pic": "/assets/images/volunteers/kafayah_lawal.jpeg",
     "group": "Board",
     "title": "Secretary",
     "roles": []
@@ -23,72 +27,70 @@
   {
     "name": "Hauwa Muibi",
     "pic": "/assets/images/volunteers/hauwa.jpg",
-    "group": "Board",                                
-    "title": "Board Member",
-    "roles": ["ta", "speaker", "organizer"]
-  },
-  {
-    "name": "Lingli Gan",
-    "pic": "/assets/images/volunteers/lingli.jpg",
     "group": "Board",
     "title": "Board Member",
-    "roles": ["instructor", "organizer"]
+    "roles": [
+      "ta",
+      "speaker",
+      "organizer"
+    ]
   },
   {
-    "name": "Tera Maher",
-    "pic": "/assets/images/volunteers/tera.jpg",
-    "group": "Board",
-    "title": "Board Member",
-    "roles": ["instructor", "speaker", "organizer"]
+    "name": "Ashley Udell",
+    "pic": "/assets/images/volunteers/ashley_udell.jpg",
+    "group": "Advisory",
+    "title": "",
+    "roles": [
+      "organizer"
+    ]
   },
   {
     "name": "Mary Donovan Martello",
     "pic": "/assets/images/volunteers/marydonovanmartello.jpg",
     "group": "Advisory",
     "title": "",
-    "roles": ["ta", "organizer"]
+    "roles": [
+      "ta",
+      "organizer"
+    ]
   },
   {
     "name": "Morgan Haworth",
     "pic": "/assets/images/volunteers/MorganHaworth.jpg",
     "group": "Advisory",
     "title": "",
-    "roles": ["instructor", "organizer"]
-  },
-  {
-    "name": "Kafayah Lawal",
-    "pic": "/assets/images/volunteers/kafayah_lawal.jpeg",
-    "group": "Advisory",
-    "title": "",
-    "roles": []
-  },
-  {
-    "name": "Lauren Schultz",
-    "group": "Advisory",
-    "pic": "/assets/images/volunteers/laurens.png",
-    "title": "",
-    "roles": ["organizer"]
+    "roles": [
+      "instructor",
+      "organizer"
+    ]
   },
   {
     "name": "Amanda Martinez",
     "pic": "/assets/images/volunteers/amanda.jpg",
     "group": "Volunteer",
     "title": "",
-    "roles": ["instructor", "organizer"]
+    "roles": [
+      "instructor",
+      "organizer"
+    ]
   },
   {
     "name": "Brenda Agüero Carranza",
     "pic": "/assets/images/volunteers/brenda.jpg",
     "group": "Volunteer",
     "title": "",
-    "roles": ["organizer"]
+    "roles": [
+      "organizer"
+    ]
   },
   {
     "name": "Ciprianna Engel",
     "pic": "/assets/images/volunteers/ciprianna.jpg",
     "group": "Volunteer",
     "title": "",
-    "roles": ["instructor"]
+    "roles": [
+      "instructor"
+    ]
   },
   {
     "name": "Juan Chavez",
@@ -102,27 +104,56 @@
     "pic": "/assets/images/volunteers/laurenr.jpg",
     "group": "Volunteer",
     "title": "",
-    "roles": ["ta"]
+    "roles": [
+      "ta"
+    ]
+  },
+  {
+    "name": "Lingli Gan",
+    "pic": "/assets/images/volunteers/lingli.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "instructor",
+      "organizer"
+    ]
   },
   {
     "name": "Payden Dyer",
     "pic": "/assets/images/volunteers/payden_dyer.png",
     "group": "Volunteer",
     "title": "",
-    "roles": ["organizer"]
+    "roles": [
+      "organizer"
+    ]
   },
   {
     "name": "Rosemary Keenan",
     "pic": "/assets/images/volunteers/Rosemary_Keenan.jpg",
     "group": "Volunteer",
     "title": "",
-    "roles": ["instructor"]
+    "roles": [
+      "instructor"
+    ]
   },
   {
     "name": "Sobie Don",
     "pic": "/assets/images/volunteers/sobie_don.jpg",
     "group": "Volunteer",
     "title": "",
-    "roles": ["speaker"]
+    "roles": [
+      "speaker"
+    ]
+  },
+  {
+    "name": "Tera Maher",
+    "pic": "/assets/images/volunteers/tera.jpg",
+    "group": "Volunteer",
+    "title": "",
+    "roles": [
+      "instructor",
+      "speaker",
+      "organizer"
+    ]
   }
 ]
