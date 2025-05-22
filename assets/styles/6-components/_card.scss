@@ -3,6 +3,7 @@
 .card__headline {
     color: $main-purple;
 }
+
 .card {
     margin: var(--space-stack-medium);
     background-color: var(--color-white);
@@ -11,10 +12,10 @@
     &.constrained {
         max-width: 360px;
 
-            @media (max-width: $ipad-landscape) {
-                max-width: 100%;
-                width: 100%;
-            }
+        @media (max-width: $ipad-landscape) {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 
     .card__icon {
@@ -55,7 +56,7 @@
     &.card-border-button {
         width: 100%;
         border-radius: var(--space-small);
-        box-shadow:  0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 7px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 7px 8px rgba(0, 0, 0, 0.2);
 
         &.constrained {
             max-width: 360px;
@@ -76,6 +77,7 @@
         .card__title {
             font-family: var(--font-family-source-code-pro);
         }
+
         .card__headline {
             text-transform: uppercase;
             margin: var(--space-stack-medium);
@@ -104,7 +106,8 @@
             display: flex;
             justify-content: center;
 
-            button, a {
+            button,
+            a {
                 max-width: 300px;
 
             }
@@ -169,15 +172,17 @@
         }
     }
 }
+
 /* Sponsor Card */
 .sponsor-section {
     width: 100%;
 }
+
 .sponsor-card-container {
     margin: var(--space-stack-x-large);
 
     &:not(.whole-row) {
-         width: 100%;
+        width: 100%;
     }
 
     @media (max-width: $ipad-landscape) {
@@ -194,7 +199,8 @@
     }
 
     .sponsor-card {
-        padding: var(--space-2x-large) var(--space-x-large);
+        padding: var(--space-medium) var(--space-small);
+        margin: var(--space-medium) var(--space-small);
         background-color: var(--color-white);
         color: var(--color-gray-dark-60);
         border-width: 1px;
@@ -213,6 +219,7 @@
     .sponsor {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         padding: var(--space-stack-large);
 
         @media (max-width: $ipad-landscape) {
